@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--IOS中Safari允许全屏浏览 （网站开启对 web app 程序的支持）-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- IOS中Safari顶端状态条样式 注意：若值为“black-translucent”将会占据页面位置，浮在页面上方（会覆盖页面 20px 高度 iphone4 和 itouch4 的 Retina 屏幕为 40px -->
+<meta name="apple-mobile-web-app-status-bar-style" content="red">
+<!--忽略将数字变为电话号码  不自动将地址和email转为链接地址-->
+<meta name="format-detection" content="telephone=no;address=no;email=no">
+<title>元件：Button</title>
+<!-- 全局样式 -->
+<link type="text/css" rel="stylesheet" href="../../../css/base.css"/>
+<link type="text/css" rel="stylesheet" href="../../../css/widgetBasic.css"/>
+<!-- 外部JS文件 -->
+<script type="text/javascript" src="../../../core/lib/zepto.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea-css.js"></script>
+<script type="text/javascript" src="../../../core/base/seajs.config.js"></script>
+<script type="text/javascript" src="../../../core/lib/zTouch.js"></script>
+<script type="text/javascript" src="../../../core/base/util.js"></script>
+<script type="text/javascript" src="../../../core/lib/juicer.js"></script>
+<script type="text/javascript" src="../../../core/base/klass.js"></script>
+<script type="text/javascript" src="../../../core/base/basicPlug.js"></script>
+<script type="text/javascript" src="../../../core/base/loader.js"></script>
+<script type="text/javascript" src="../../../core/base/map.js"></script>
+<script type="text/javascript" src="../../../core/base/page.js"></script>
+<script type="text/javascript" src="../../../core/base/event.js"></script>
+<script type="text/javascript" src="../../../core/datacenter/dataCenter.js"></script>
+<script type="text/javascript" src="../../../core/base/animation.js"></script>
+<!--元件-->
+<script type="text/javascript" src="../../../core/widget/basic/button.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+// var args1 = {
+//     type: 'textIconUp',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+//     id: 'textOnly0',
+//     cls : 'gaga',
+//     height : "60px",
+//     width : "auto",
+//     background : "#fff",
+//     color : "#000",
+//     fontSize : "14px",
+//     border : "1px solid #ccc",
+//     text: '提交',
+//     iconSize : "16px",
+//     iconColor : "#c00",
+//     icon : 'c609'    // 字体图标
+// };
+// $('body').append(LAPP.Widget.Button(args1));
+var _wid = $(window).width();
+var args2 = {
+    type: 'textIconRight',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly1',
+    cls : 'percent-input',
+    text: 'Button',
+    color:'#057AFB',
+    width : (_wid/2 - 37)+'px'
+};
+$('body').append(LAPP.Widget.Button(args2));
+var args22 = {
+    type: 'textIconRight',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly22',
+    cls : 'percent-input',
+    background : "#057AFB",
+    color : "#fff",
+    text: 'Button',
+    width : (_wid/2 - 37)+'px'
+};
+$('body').append(LAPP.Widget.Button(args22));
+var args21 = {
+    type: 'textIconRight',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly11',
+    cls : 'percent-input',
+    text: 'Button',
+    color:'#057AFB',
+    width : (_wid - 42)+'px'
+};
+$('body').append(LAPP.Widget.Button(args21));
+var args222 = {
+    type: 'textIconRight',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly222',
+    cls : 'percent-input',
+    background : "#057AFB",
+    color : "#fff",
+    text: 'Button',
+    width : (_wid - 42)+'px'
+};
+$('body').append(LAPP.Widget.Button(args222));
+var args010 = {
+    type: 'textIconUp',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly010',
+    cls : 'userIcon0',
+    height : "67px",
+    color : '#fff',
+    background : "#2D98D6",
+    border : "none",
+    fontSize : '12px',
+    iconSize : "40px",
+    text : '工作区',
+    iconColor : "#fff",
+    icon : 'c692'    // 字体图标
+};
+$('body').append(LAPP.Widget.Button(args010));
+var args011 = {
+    type: 'textIconUp',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly011',
+    cls : 'userIcon',
+    height : "67px",
+    color : '#fff',
+    background : "#2D98D6",
+    border : "none",
+    fontSize : '12px',
+    iconSize : "40px",
+    text : '发送信息',
+    iconColor : "#fff",
+    icon : 'c659'    // 字体图标
+};
+$('body').append(LAPP.Widget.Button(args011));
+var args012 = {
+    type: 'textIconUp',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly012',
+    cls : 'userIcon',
+    height : "67px",
+    color : '#fff',
+    background : "#2D98D6",
+    border : "none",
+    fontSize : '12px',
+    iconSize : "37px",
+    text : '用户',
+    iconColor : "#fff",
+    icon : 'c693'    // 字体图标
+};
+$('body').append(LAPP.Widget.Button(args012));
+$('body').append('<p></p>');
+var args3 = {
+    type: 'textIconUpLeft',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly2',
+    height : "60px",
+    background : "none",
+    border : "none",
+    iconSize : "40px",
+    iconColor : "#C45156",
+    icon : '2631'    // 字体图标
+};
+$('body').append(LAPP.Widget.Button(args3));
+var args4 = {
+    type: 'textIconUpLeft',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly4',
+    height : "60px",
+    background : "none",
+    border : "none",
+    iconSize : "40px",
+    iconColor : "#4490CD",
+    icon : '2632'    // 字体图标
+};
+$('body').append(LAPP.Widget.Button(args4));
+var args5 = {
+    type: 'textIconUpLeft',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly5',
+    height : "60px",
+    background : "none",
+    border : "none",
+    iconSize : "40px",
+    iconColor : "#68B568",
+    icon : '2633'    // 字体图标
+};
+$('body').append(LAPP.Widget.Button(args5));
+$('body').append('<p></p>');
+var args311 = {
+    type: 'textIconUpLeft',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly311',
+    cls : 'percent-input',
+    background : '#13C030',
+    color:'#fff',
+    text : '发送消息',
+    border : '1px solid #13C030',
+    width : (_wid/2 - 37)+'px',
+    iconSize : "30px",
+    iconColor : "#fff",
+    icon : 'e605'
+};
+$('body').append(LAPP.Widget.Button(args311));
+var args312 = {
+    type: 'textIconUpLeft',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnly312',
+    cls : 'percent-input',
+    background : "#057AFB",
+    color : "#fff",
+    text: 'Button',
+    text : '加为联系人',
+    width : (_wid/2 - 37)+'px'
+};
+$('body').append(LAPP.Widget.Button(args312));
+$('body').append('<p></p>');
+var argsp5 = {
+    type: 'textIconUpLeft',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnlyp5',
+    cls : 'textRadius',
+    height : '40px',
+    width : '70px',
+    fontSize : '16px',
+    border : '1px solid #D6D6D7',
+    color : '#777',
+    text : 'Button'
+};
+$('body').append(LAPP.Widget.Button(argsp5));
+var argsp6 = {
+    type: 'textIconRight',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnlyp6',
+    cls : 'textRadius',
+    height : '40px',
+    width : '70px',
+    fontSize : '16px',
+    border : '1px solid #D6D6D7',
+    color : '#428FFC',
+    text : 'Button',
+    iconColor : '#D7D8DA',
+    icon : '1602'
+};
+$('body').append(LAPP.Widget.Button(argsp6));
+var argsp7 = {
+    type: 'textIconRight',  // text textIconUp(上) textIconRight(右) textIconBottom(下) textIconUpLeft(左)
+    id: 'textOnlyp7',
+    cls : 'textRadius',
+    background : '#2D98D6',
+    height : '40px',
+    width : '70px',
+    fontSize : '16px',
+    border : '1px solid #2D98D6',
+    color : '#fff',
+    text : 'Button',
+};
+$('body').append(LAPP.Widget.Button(argsp7));
+</script>
+</body>
+</html>

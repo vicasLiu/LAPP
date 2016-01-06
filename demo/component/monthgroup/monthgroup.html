@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--IOS中Safari允许全屏浏览 （网站开启对 web app 程序的支持）-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- IOS中Safari顶端状态条样式 注意：若值为“black-translucent”将会占据页面位置，浮在页面上方（会覆盖页面 20px 高度 iphone4 和 itouch4 的 Retina 屏幕为 40px -->
+<meta name="apple-mobile-web-app-status-bar-style" content="red">
+<!--忽略将数字变为电话号码  不自动将地址和email转为链接地址-->
+<meta name="format-detection" content="telephone=no;address=no;email=no">
+<title>组件：monthgroup</title>
+<!-- 全局样式 -->
+<link type="text/css" rel="stylesheet" href="../../../css/base.css"/>
+<!-- 外部JS文件 -->
+<script type="text/javascript" src="../../../core/lib/zepto.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea-css.js"></script>
+<script type="text/javascript" src="../../../core/base/seajs.config.js"></script>
+<script type="text/javascript" src="../../../core/lib/zTouch.js"></script>
+<script type="text/javascript" src="../../../core/base/util.js"></script>
+<script type="text/javascript" src="../../../core/lib/juicer.js"></script>
+<script type="text/javascript" src="../../../core/base/klass.js"></script>
+<script type="text/javascript" src="../../../core/base/basicPlug.js"></script>
+<script type="text/javascript" src="../../../core/base/loader.js"></script>
+<script type="text/javascript" src="../../../core/base/map.js"></script>
+<script type="text/javascript" src="../../../core/base/page.js"></script>
+<script type="text/javascript" src="../../../core/base/event.js"></script>
+<script type="text/javascript" src="../../../core/datacenter/dataCenter.js"></script>
+<script type="text/javascript" src="../../../core/base/animation.js"></script>
+<!--组件-->
+<script type="text/javascript" src="../../../core/widget/component/toolbar/toolbar.js"></script>
+<script type="text/javascript" src="../../../core/widget/component/monthgroup/monthgroup.js"></script>
+</head>
+<body>
+<script>
+var args = {
+    op : {
+        render: "LAPP-header", 
+        id : "loading"
+    },
+    componentData : [
+         {type:'title',text: 'monthgroup',show: true}
+    ],
+    callback: function (html) {
+        $('body').append(html);        
+    }
+};
+LAPP.Component.Toolbar(args);
+var _wid = $(window).width(),
+    _wid2 = (_wid/2 - 37)+'px',
+    _wid4 = (_wid/4 - 31)+'px';
+var argsMonthgroup = {
+    op : {
+        id: 'Monthgroup',
+        data : {
+            title : { key : 'title1' , value : '2015' , show : true  },//, arr : [ 2015 , 2050 ]
+            data : [ 
+                [
+                    {id: 'textOnly0',width : (_wid - 42)+'px',field : 'Button0'},
+                    {id: 'textOnly1',width : _wid2,field : 'Button1',isSelected:true},
+                    {id: 'textOnly2',width : _wid2,field : 'Button2'},
+                    {id: 'textOnly3',width : _wid4,field : 'Button3',cls : 'Monthgroup-pd8'},
+                    {id: 'textOnly4',width : _wid4,field : 'Button4',cls : 'Monthgroup-pd8'},
+                    {id: 'textOnly5',width : _wid4,field : 'Button5',cls : 'Monthgroup-pd8'},
+                    {id: 'textOnly6',width : _wid4,field : 'Button6',cls : 'Monthgroup-pd8'},
+                ],
+                [
+                    {id: 'Month1',width : _wid4,field : 'month1',cls : 'Monthgroup-pd8'},
+                    {id: 'Month2',width : _wid4,field : 'month2',cls : 'Monthgroup-pd8',isSelected:true},
+                    {id: 'Month3',width : _wid4,field : 'month3',cls : 'Monthgroup-pd8'},
+                    {id: 'Month4',width : _wid4,field : 'month4',cls : 'Monthgroup-pd8'},
+                    {id: 'Month5',width : _wid4,field : 'month5',cls : 'Monthgroup-pd8'},
+                    {id: 'Month6',width : _wid4,field : 'month6',cls : 'Monthgroup-pd8'},
+                    {id: 'Month7',width : _wid4,field : 'month7',cls : 'Monthgroup-pd8'},
+                    {id: 'Month8',width : _wid4,field : 'month8',cls : 'Monthgroup-pd8'},
+                    {id: 'Month9',width : _wid4,field : 'month9',cls : 'Monthgroup-pd8'},
+                    {id: 'Month10',width : _wid4,field : 'month10',cls : 'Monthgroup-pd8'},
+                    {id: 'Month11',width : _wid4,field : 'month11',cls : 'Monthgroup-pd8'},
+                    {id: 'Month12',width : _wid4,field : 'month12',cls : 'Monthgroup-pd8'}
+                ]
+            ],
+        }
+    },
+    componentData : {
+        title:'2016',
+        Button0 : '全年',
+        Button1 : '上半年',
+        Button2 : '下半年',
+        Button3 : '一季度',
+        Button4 : '二季度',
+        Button5 : '三季度',
+        Button6 : '四季度',
+        month1 : '一月',
+        month2 : '二月',
+        month3 : '三月',
+        month4 : '四月',
+        month5 : '五月',
+        month6 : '六月',
+        month7 : '七月',
+        month8 : '八月',
+        month9 : '九月',
+        month10 : '十月',
+        month11 : '十一月',
+        month12 : '十二月'
+    },
+    callback: function (html) {
+        $('body').append(html);
+    }
+};
+LAPP.Component.Monthgroup(argsMonthgroup);
+</script>
+</body>
+</html>

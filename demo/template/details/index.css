@@ -1,0 +1,151 @@
+.LAPP-component-tab{
+	height: 90px !important;
+	line-height: 30px !important;
+}
+.LAPP-component-buttonlayer{
+	bottom: auto!important;
+}
+#formpage-R .LAPP-form-group-ul li{
+	height:25px;
+	line-height:25px;
+	padding:0;
+	text-align:left;
+	border:none;
+}
+#formpage-R .LAPP-form-group-ul{
+	border:none;
+}
+#formpage-R .LAPP-form-group-ul li label{
+	color:#000!important;
+}
+#formpage-R .LAPP-form-group-ul li:first-child{
+	float:left;
+	width:48%;
+}
+#formpage-R .LAPP-form-group-ul li:nth-child(2){
+	float:right;
+	width:48%;
+}
+#formpage-R .LAPP-form-group-ul li:nth-child(3){
+	clear:both;
+}
+#formpage-R .LAPP-form-group-ul li .dd_div_r{
+	text-align:left;
+	padding-left:5px;
+}
+#formpage{
+	padding:5px 0;
+}
+#tabpage #tab{
+	margin:0;
+	border:none;
+	background:#D7D7D7;
+}
+#tabpage,#tabpage #tab,#tabpage #tab a{
+	height:40px!important;
+	line-height:40px!important;
+	border-radius:0!important;
+	background:#D9D6D5;
+	overflow:hidden;
+}
+#tabpage #tab a::after{
+	border-right:1px dashed #aaa;
+	background:none;
+}
+#tabpage #tab a:nth-child(3){
+	padding:0 5px;
+	width:calc(25% - 10px)!important;
+	line-height: 18px!important;
+}
+#tabpage #tab a:nth-child(4)::after{
+	display:none;
+}
+#tabpage #tab a{
+	color:#000;
+}
+#tabpage #tab a.active{
+	color:#3C8DDA;
+	background:#D9D6D5;
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul{
+	border:none;
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul li{
+	float:left;
+	height:30px;
+	line-height:30px;
+	width:50%;
+	padding:0;
+	border:none;
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul li .dd_label{
+	padding-left:10px;
+	font-size:12px;
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul li .dd_div_r{
+	padding-left:7px;
+	text-align:left;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	font-size:12px;
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul li:nth-child(3){
+	width:30%;
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul li:nth-child(4){
+	width:70%;
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul li:nth-child(5){
+	float:none;
+	width:100%;
+	height:auto;
+	clear:both;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul li:nth-child(5)::after{
+	position:relative;
+	top:10px;
+	display:block;
+	margin:0 10px;
+	height:1px;
+	border-bottom:1px solid #CFCFCF;
+	content:'';
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul li:nth-child(5) .dd_div_r{
+	padding-right:10px;
+}
+#basic-info .LAPP-form-group .LAPP-form-group-ul li:last-child{
+	height:auto;
+	width:100%;
+} 
+#basic-info .LAPP-form-group .LAPP-form-group-ul li:last-child .dd_div_r{
+	clear:both;
+}
+#investigate #investigate-info .LAPP-form-group-ul{
+	border:none;
+}
+#investigate #investigate-info .LAPP-form-group-ul li{
+	height:auto!important;
+	border:none!important;
+	overflow:hidden;
+}
+#investigate #investigate-info .LAPP-form-group-ul li:first-child .dd_div_r{
+	clear:both;
+}
+#investigate #investigate-info .LAPP-form-group-ul li:first-child label{
+	height:37px;
+}
+#investigate #investigate-info .LAPP-form-group-ul li:first-child .dd_div_r div{
+	margin-top:0;
+	padding:0;
+}
+#investigateExperienceradio{
+	float:right;
+    padding-left:10px;
+    overflow:hidden;
+}
+#investigateThinking .LAPP-input-voice-container{
+	height:90px;
+}

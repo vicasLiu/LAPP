@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--IOS中Safari允许全屏浏览 （网站开启对 web app 程序的支持）-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- IOS中Safari顶端状态条样式 注意：若值为“black-translucent”将会占据页面位置，浮在页面上方（会覆盖页面 20px 高度 iphone4 和 itouch4 的 Retina 屏幕为 40px -->
+<meta name="apple-mobile-web-app-status-bar-style" content="red">
+<!--忽略将数字变为电话号码  不自动将地址和email转为链接地址-->
+<meta name="format-detection" content="telephone=no;address=no;email=no">
+<title>元件：switch</title>
+<!-- 全局样式 -->
+<link type="text/css" rel="stylesheet" href="../../../css/base.css"/>
+<link type="text/css" rel="stylesheet" href="../../../css/widgetBasic.css"/>
+<!-- 外部JS文件 -->
+<script type="text/javascript" src="../../../core/lib/zepto.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea-css.js"></script>
+<script type="text/javascript" src="../../../core/base/seajs.config.js"></script>
+<script type="text/javascript" src="../../../core/lib/zTouch.js"></script>
+<script type="text/javascript" src="../../../core/base/util.js"></script>
+<script type="text/javascript" src="../../../core/lib/juicer.js"></script>
+<script type="text/javascript" src="../../../core/base/klass.js"></script>
+<script type="text/javascript" src="../../../core/base/basicPlug.js"></script>
+<script type="text/javascript" src="../../../core/base/loader.js"></script>
+<script type="text/javascript" src="../../../core/base/map.js"></script>
+<script type="text/javascript" src="../../../core/base/page.js"></script>
+<script type="text/javascript" src="../../../core/base/event.js"></script>
+<script type="text/javascript" src="../../../core/datacenter/dataCenter.js"></script>
+<script type="text/javascript" src="../../../core/base/animation.js"></script>
+<!--元件-->
+<script type="text/javascript" src="../../../core/widget/basic/switch.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+//switch
+var _args = {};
+// _args.args1 = {
+//     // width:40,
+//     // height:20,
+//     id: 'switchBtn',
+//     text: ['男','女'],
+//     // background : '#fff', // 背景颜色(false)
+//     // activeBackground:'#70DA65',  // 背景颜色(true)
+//     // color:'#f00', // 字体颜色
+//     fontSize : '16px',   // 字体大小
+//     valDefault:false,  // 默认是否选中
+//     cls: 'switch',
+// };
+_args.args1 = {
+    id: 'switchBtn1',
+    width:30,
+    fontSize : '16px',   // 字体大小
+    valDefault:true,  // 默认是否选中
+    cls: 'switch1'
+};
+_args.args2 = {
+    id: 'switchBtn2',
+    background : '#fff', // 背景颜色(false)
+    activeBackground:'#70DA65',  // 背景颜色(true)
+    width:28,
+    height : 28,
+    fontSize : '16px',   // 字体大小
+    valDefault:false,  // 默认是否选中
+    cls: 'switch-bd'
+};
+_args.args3 = {
+    id: 'switchBtnB',
+    text: ['开','关'],
+    background : '#DDDEE1',
+    activeBackground:'#3C8DDA',
+    fontSize : '12px',   // 字体大小
+    valDefault:true,  // 默认是否选中
+    cls: 'switch-bk'
+};
+_args.args4 = {
+    id: 'switchBtn4',
+    text: ['\\c700','\\1609'],
+    background : '#DDDEE1',
+    activeBackground:'#3C8DDA',
+    fontSize : '16px',   // 字体大小
+    valDefault:false,  // 默认是否选中
+    cls: 'switch-bk'
+};
+_args.args5 = {
+    height:2,
+    width:20,
+    id: 'switchBtn5',
+    background : '#DDDEE1',
+    activeBackground:'#3C8DDA',
+    valDefault:false,  // 默认是否选中
+    cls: 'switch-bks'
+};
+
+
+
+
+
+function count(o){
+    var t = typeof o;
+    if(t == 'string'){
+            return o.length;
+    }else if(t == 'object'){
+        var n = 0;
+        for(var i in o){
+            n++;
+        }
+        return n;
+    }
+    return false;
+}
+var len = count(_args),i = 1,
+    html_fn = function(args){
+        if((typeof args) == 'object' ){
+            $('body').append(LAPP.Widget.Switch(args).html());
+            LAPP.Widget.Switch(args).event();
+        }
+    }
+for(;i<=len;i++){
+    var _data = _args['args'+i] || '';
+    html_fn(_data);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/*
+    alert组件
+    Gaotd 2015-1-7
+*/
+.LAPP-component-confirm-dig{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    z-index:10000;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:rgba(0,0,0,.5);
+    font-family:"微软雅黑";
+}
+.LAPP-component-confirm-dig-div{
+    margin:45% 25px;
+    border-radius:5px;
+    background:#fff;
+}
+.LAPP-component-confirm-dig-div h3{
+    height:40px;
+    line-height:40px;
+    font-size:17px;
+    text-align:center;
+}
+.LAPP-component-confirm-dig-div p{
+    font-size:14px;
+    padding:0 20px;
+    text-align:center;
+}
+.LAPP-component-confirm-dig-div div.button{
+    margin-top:15px;
+    height:44px;
+    line-height:44px;
+    border-top:1px solid #C5C5C5;
+}
+.LAPP-component-confirm-dig-div div.button a{
+    float:left;
+    width:50%;
+    text-align:center;
+    font-size:17px;
+}
+.confirm-btn,.cancel-btn{
+    position:relative;
+    color:#F68C25;
+}
+.cancel-btn::after{
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    width:1px;
+    height:100%;
+    background:#C5C5C5;
+    content:'';
+}

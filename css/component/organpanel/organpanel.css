@@ -1,0 +1,104 @@
+@CHARSET "UTF-8";
+/*
+   organpanel
+*/
+.LAPP-organpanel-dl>dt::after,
+.LAPP-organpanel-dl>dt.active::after,
+.dd_div_list .dd_label::before{
+	font-family:"LAPP-font-icon";
+}
+.txt-input{
+	font-size:14px;
+	border:none;
+	text-align:right;
+}
+.LAPP-organpanel-dl{
+	font-size:14px;
+	border-bottom:1px solid #B3B3B3;
+}
+.LAPP-organpanel-dl>dt{
+	height:44px;
+	line-height:44px;
+	padding:0 10px;
+	background:#fff;
+	border-top:1px solid #B3B3B3;
+}
+.LAPP-organpanel-dl>dt::after{
+	position:absolute;
+	right:10px;
+	color:#B3B3B3;
+	font-size:20px;
+	content:'\1611';
+}
+.LAPP-organpanel-dl>dt.active{
+	border-bottom:1px solid #B3B3B3;
+}
+.LAPP-organpanel-dl>dt.active::after{
+	content:'\1610';
+}
+.LAPP-organpanel-dl>dd{
+	background:#F5F5F5;
+}
+.dd_div_list{
+	padding:0 10px;
+	height:45px;
+	line-height:45px;
+	overflow:hidden;
+	color:#777;
+	border-bottom:1px solid #ccc;
+}
+.dd_div_list:last-child{
+	border-bottom:none;
+}
+.dd_label{
+	float:left;
+	min-width:30px;
+	max-width:32%;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+}
+.dd_div_r{
+	float:right;
+	max-width:68%;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	text-align:right;
+	overflow:hidden;
+	
+}
+.icon_wt::before{
+	margin-right:5px;
+	color:#3C8DDA;
+	font-size:20px;
+	content:'\c695';
+}
+.icon_us::before{
+	margin-right:5px;
+	color:#7DC300;
+	font-size:20px;
+	content:'\c603';
+}
+.ip_text{
+	float:right;
+	width:85%;
+	height:28px;
+	line-height:28px;
+	margin-top:7px;
+	padding:0 5px;
+	background:#f0f0f0;
+	text-align:right;
+	border:1px solid #DCDCDC;
+	border-radius:3px;
+}
+
+
+
+
+
+
+
+
+
+
+

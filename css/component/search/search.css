@@ -1,0 +1,199 @@
+.LAPP-component-search{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	z-index:10000;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background:#fff;
+	font-family:"微软雅黑";
+}
+.LAPP-component-search-div{
+	position:relative;
+	height:37px;
+	line-height:44px;
+	padding:7px 10px 0 10px;
+	background:#F1F2F3;
+	border-bottom:1px solid #E5E5E5;
+	transition:padding .5s;
+	-o-transition:padding .5s;
+	-ms-transition:padding .5s;
+	-moz-transition:padding .5s;
+	-webkit-transition:padding .5s;
+}
+.LAPP-component-search-div-active{
+	padding-right:50px;
+}
+.LAPP-component-search-div-bg{
+	height:30px;
+	line-height:30px;
+	border:1px solid #D8D8D8;
+	border-radius:20px;
+	background:#fff;
+	overflow:hidden;
+}
+.LAPP-component-search-div-bg::before{
+	float:left;
+	margin:0 10px;
+	color:#C2C5C9;
+	font-size:18px;
+	font-family:"LAPP-font-icon";
+	content:'\1601';
+}
+.LAPP-component-search-div-bg input{
+	float:left;
+	height:27px;
+	line-height: normal;
+	line-height:27px/9;
+	margin-top:2px;
+	border:none;
+	font-size:14px;
+	width:calc(100% - 40px);
+}
+.search-btn{
+	position:absolute;
+	right:-50px;
+	top:0;
+	font-size:16px;
+	color:#3C8DDA;
+	transition:right .5s;
+	-o-transition:right .5s;
+	-ms-transition:right .5s;
+	-moz-transition:right .5s;
+	-webkit-transition:right .5s;
+}
+.search-btn-active{
+	right:10px;
+}
+
+
+
+
+#wrapper {
+	background: #ffffff !important;
+}
+#search-module{
+	top:0;
+}
+.search {
+	border-bottom: 1px solid #BFBFBF;
+	padding: 10px;
+}
+.searchIpt {
+	position: relative;
+	background-color: #E3E4E6;
+	border-radius: 5px;
+	height:35px;
+	line-height:30px;
+	text-align: center;
+	cursor: pointer;
+}
+.searchIpt::before{
+	top:3px;
+	left:50%;
+	margin-left:-30px;
+	color:#8E8E93;
+	content:'\1601';
+	font-size:14px;
+}
+.searchIpt::before,
+.searchIpt input,
+.searchIpt,
+.text-close{
+	-webkit-transition: all .3s; 
+	-moz-transition: all .3s; 
+	-o-transition: all .3s; 
+	transition: all .3s;
+}
+.searchIpt input {
+	width: 100%;
+	border: none;
+	color:#AEAEB2;
+	font-size: 14px;
+	text-align: left;
+	background:#E3E4E6;
+	outline: none;
+}
+.searchIpt a{
+	position: absolute;
+	right:5px;
+	top:3px;
+	width: 20px;
+	height: 30px;
+	line-height:30px;
+	text-align:center;
+}
+.searchIpt .text-close{
+	width:60px;
+	color:#999;
+	font-size:16px;
+	right:-95px;
+}
+.searchIpt span {
+	position: absolute;
+	top: 4px;
+	right: 30px;
+	color: #555658;
+	font-size: 16px;
+}
+.active .text-close{
+	right:-55px;
+}
+.searchIpt.active{
+	margin-right:40px;
+}
+.searchIpt.active input {
+	width: 70% !important; 
+	color: #555658;
+	margin-right:5px;
+}
+.searchIpt.active a {
+	display: block;
+}
+.searchList {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 53px;
+	bottom: 0;
+	padding: 0 10px 0px 20px;
+	width: 100%;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	z-index: 100;
+}
+.searchList li {
+	padding: 10px 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+.searchList li a {
+	display: block;
+	color: #000000;
+}
+.LAPP-input-container{
+	overflow:hidden;
+	height:auto!important;
+	width:auto!important;
+	border:none!important;
+}
+.LAPP-input-container input{
+	padding:0;
+}
+.LAPP-input-clearButton::before{
+	line-height:32px!important;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+{
+  "formData" :  [
+    {
+      "title1":"活动整体时间",
+      "data" : [
+        {"textRight":"2015-01-01","textlabel":"开始日期*", "isLink":true},
+        {"textRight":"2015-02-01","textlabel":"结束日期*", "isLink":true}
+      ]
+    },
+    {
+      "title1":"1.物料确认阶段",
+      "data" : [
+        {"textRight":"2015-01-01","textlabel":"开始日期", "isLink":true},
+        {"textRight":"2015-01-07","textlabel":"结束日期", "isLink":true}
+      ]
+    },
+    {
+      "title1":"2.客户蓄水阶段",
+      "data" : [
+        {"textRight":"2015-01-08","textlabel":"开始日期", "isLink":true},
+        {"textRight":"2015-01-15","textlabel":"结束日期", "isLink":true}
+      ]
+    },
+    {
+      "title1":"3.活动开展阶段",
+      "data" : [
+        {"textRight":"2015-01-16","textlabel":"开始日期", "isLink":true},
+        {"textRight":"2015-01-23","textlabel":"结束日期", "isLink":true}
+      ]
+    },
+    {
+      "title1":"4.活动总结阶段",
+      "data" : [
+        {"textRight":"2015-01-24","textlabel":"开始日期", "isLink":true},
+        {"textRight":"2015-01-31","textlabel":"结束日期", "isLink":true}
+      ]
+    }
+  ],
+  "status" : "success"
+}

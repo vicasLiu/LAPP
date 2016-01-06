@@ -1,0 +1,37 @@
+/*
+    Timepick组件
+    Gaotd 2015-1-7
+*/
+.LAPP-timepick{
+    font-family:'微软雅黑';
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    overflow:hidden;
+}
+.LAPP-timepick-ul{
+    position:relative;
+    float:left;
+    width:2200px;
+}
+.LAPP-timepick-ul li{
+    width:60px;
+    height:35px;
+    line-height:35px;
+    float:left;
+    text-align:center;
+    background:#E5E5E5;
+    color:#74B732;
+    font-size:14px;
+    border-right:1px solid #fff;
+}
+.LAPP-timepick-ul li.bg-gray{
+    color:#666;
+}
+.LAPP-timepick-ul li.bg-green{
+    color:#fff;
+    background:#8DCF5A;
+}
+.LAPP-timepick-ul li.bg-red{
+    color:#fff;
+    background:#DBA91A;
+}

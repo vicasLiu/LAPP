@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+/*
+   pushbutton
+*/
+.LAPP-component-pushbutton{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1001;
+	overflow:hidden;
+	background:rgba(0,0,0,.5);
+	font-family:"微软雅黑";
+}
+.LAPP-component-pushbutton-dl{
+	position:absolute;
+	bottom:7px;
+	left:0;
+	padding:0;	
+	width:100%;
+}
+.LAPP-component-pushbutton-dl dt,
+.LAPP-component-pushbutton-dl dd{
+	margin:0 7px;
+	background:#F3F3F3;
+	text-align:center;
+	color:#F68C25;
+	font-size:17px;
+	border:1px solid #EAEAEA;
+}
+.LAPP-component-pushbutton-dl dt{
+	padding:10px 45px;
+	color:#8A8A8A;
+	font-size:12px;
+	border-radius:5px 5px 0 0;
+	border-bottom:none
+}
+.LAPP-component-pushbutton-dl dd{
+	height:42px;
+	line-height:42px;
+	border-top:1px solid #ccc;
+	border-bottom:none;
+}
+.LAPP-component-pushbutton-dl dd:nth-last-child(2){
+	border-radius:0 0 5px 5px;
+}
+.LAPP-component-pushbutton-dl .cls_frist{
+	border-radius:5px 5px 0 0;
+}
+.LAPP-component-pushbutton-dl dd:last-child{
+	border:1px solid #EAEAEA;
+	margin-top:7px;
+	border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+

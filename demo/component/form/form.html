@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--IOS中Safari允许全屏浏览 （网站开启对 web app 程序的支持）-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- IOS中Safari顶端状态条样式 注意：若值为“black-translucent”将会占据页面位置，浮在页面上方（会覆盖页面 20px 高度 iphone4 和 itouch4 的 Retina 屏幕为 40px -->
+<meta name="apple-mobile-web-app-status-bar-style" content="red">
+<!--忽略将数字变为电话号码  不自动将地址和email转为链接地址-->
+<meta name="format-detection" content="telephone=no;address=no;email=no">
+<title>组件：form</title>
+<!-- 全局样式 -->
+<link type="text/css" rel="stylesheet" href="../../../css/base.css"/>
+<link type="text/css" rel="stylesheet" href="../../../css/widgetBasic.css"/>
+<!-- 外部JS文件 -->
+<script type="text/javascript" src="../../../core/lib/zepto.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea-css.js"></script>
+<script type="text/javascript" src="../../../core/base/seajs.config.js"></script>
+<script type="text/javascript" src="../../../core/lib/zTouch.js"></script>
+<script type="text/javascript" src="../../../core/base/util.js"></script>
+<script type="text/javascript" src="../../../core/lib/juicer.js"></script>
+<script type="text/javascript" src="../../../core/base/klass.js"></script>
+<script type="text/javascript" src="../../../core/base/basicPlug.js"></script>
+<script type="text/javascript" src="../../../core/base/loader.js"></script>
+<script type="text/javascript" src="../../../core/base/map.js"></script>
+<script type="text/javascript" src="../../../core/base/page.js"></script>
+<script type="text/javascript" src="../../../core/base/event.js"></script>
+<script type="text/javascript" src="../../../core/datacenter/dataCenter.js"></script>
+<script type="text/javascript" src="../../../core/base/animation.js"></script>
+<script type="text/javascript" src="../../../core/widget/basic/slider.js"></script>
+<!--组件-->
+<script type="text/javascript" src="../../../core/widget/component/loading/loading.js"></script>
+<script type="text/javascript" src="../../../core/widget/component/toolbar/toolbar.js"></script>
+<script type="text/javascript" src="../../../core/widget/component/form/form.js"></script>
+</head>
+<body>
+<style>
+#gaga dt,#gaga dd{height:40px;border-top:1px solid #ccc;line-height:40px;padding:0 10px;}
+</style>
+<!-- <dl id='gaga'>
+    <dt>gaga dt</dt>
+    <dd>gaga dd</dd>
+</dl> -->
+<script>
+var args = {
+    op : {
+        render: "LAPP-header", 
+        id : "loading"
+    },
+    componentData : [
+         {type:'title',text: 'form',show: true}
+    ],
+    callback: function (html) {
+        $('body').append(html);
+    }
+};
+LAPP.Component.Toolbar(args);
+var argsForm = {
+    op : {
+        id: 'argsForm',
+        edit : 'allEditors',  // 可以编辑全部(allEditors) 部分能编辑(partEditors) 全部不能编辑(notEdit)
+        render : 'argsForm',
+        dbData:"detail",
+        data : [
+            {
+                title : {key:'title',value:'栏目1',show:true},
+                isTogglepanel : true,
+                data : [
+                    {
+                        show : true,
+                        title : {key:'gaga',value:'货物1'},
+                        data : [
+                            // {id:"addressSelect1",label:'dragBar',labelCls:'ga',field:'address',type:'dragBar',orderId:"address",groupId:"address",value: '10',edit:true,defaultsValue:10,arr:[0,100],fn:function(){
+                            //     // step: 1,   // 每个步距量
+                            //     // width: 300,
+                            //     // disable : false,   // 是否可以拖动 默认为false  false表示可以拖动
+                            //     // showScale : true, // 是否显示底部label值 默认为true
+                            //     // showLabels: true // 是否显示头部label值 默认为true
+                            // }},
+                            // {id:"switchBtn",label:'switchBtn',labelCls:'ga1',field:'address',type:'switchBtn',orderId:"address",groupId:"address",value: '牛112321',edit:true,arr: ['牛','X']},
+                            {id:"addressSelect3_text",label:'textarea',labelCls:'ga',field:'address',type:'textarea',orderId:"address",groupId:"address",value: 'gaga',edit:true,isVoice : true,placeholder: '带语音：请输入textarea',fn:function(){
+                                return 5555555555555;
+                            }},
+                            {id:"addressSelect3",label:'div',labelCls:'ga',type:'div',value:'13232'},
+                            {id:"addressSelect3_textradio",label:'textarea',labelCls:'ga',field:'address',type:'radio',orderId:"address",groupId:"address",edit:true,name : 'sex',value: '女',arr : ['男','女']},
+                            // {id:"addressSelect5",field:'address',type:'btn',InputType:'textIconUp',orderId:"address",groupId:"address",value: 'gaga',edit:true,width:'90%',background : "#057AFB",border:'none',color:'#fff',height:'35px'},
+                            // {id:"addressSelect23",label:'inputText',labelCls:'ga',field:'address0',type:'inputText',orderId:"orderId",groupId:"groupId",value:'321321',edit:true},
+                            // {id:"addressSelect23",label:'inputText',labelCls:'ga',field:'address5',type:'div',orderId:"orderId",groupId:"groupId",value: 'gaga',fn:function(data){
+                            //     return '<div>123</div><img src="123.jpg">';
+                            // }},
+                            // {id:"addressSelect231",label:'password',labelCls:'ga',field:'address',type:'password',orderId:"orderId",groupId:"groupId",value: '123456',edit:false,placeholder: '请输入密码'},
+                            // {id:"addressSelect231",label:'number',labelCls:'ga',field:'address1',type:'number',orderId:"orderId",groupId:"groupId",value: '12',edit:true,placeholder: '请输入数字'},
+                            // {id:"addressSelect1",label:'select',labelCls:'ga',field:'select',type:'select',orderId:"address",groupId:"address",value: 'select',edit:true},
+                            // {id:"date",label:'date',labelCls:'ga',field:'date',type:'date',orderId:"orderId",groupId:"groupId",value: '2015-01-20',edit:true}// 日期格式必须是 yyyy-mm-dd
+                        ]
+                    }
+                ]
+            },
+            {
+                title : {key:'title',value:'栏目1',show:true},
+                isTogglepanel : false,  // 是否可以切换
+                data : [
+                    // {id:"addressSelect1",label:'select',labelCls:'ga',field:'id',type:'select',orderId:"address",groupId:"address",value: '555555555522222',edit:true},
+                    {id:"addressSelect231",label:'number',labelCls:'ga',field:'address1',type:'inputText',orderId:"orderId",groupId:"groupId",value: '123456',edit:true,placeholder: '请输入数字1',fn:function(data){
+
+                    }},
+                    // {id:"addressSelect2315555555",label:'password',labelCls:'ga',field:'address',type:'password',orderId:"orderId",groupId:"groupId",value: '123456',edit:false,placeholder: '请输入密码',fn:function(){}},
+                    // {id:"addressSelect231",label:'number',labelCls:'ga',field:'address2',type:'number',orderId:"orderId",groupId:"groupId",value: '12345',edit:true,placeholder: '请输入数字2'},
+                    // {id:"addressSelect231",label:'number',labelCls:'ga',field:'address3',type:'number',orderId:"orderId",groupId:"groupId",value: '1234',edit:true,placeholder: '请输入数字3'},
+                    // {id:"switchBtn",label:'switchBtn',labelCls:'ga1',field:'address',type:'switchBtn',orderId:"address",groupId:"address",value: '牛',edit:true,text: ['牛','X']},
+                ]
+            }
+        ]
+    },
+    componentData : [
+        {address0:'1111111111111111111111',address5:0000},
+        {address1:'134222222'},
+        {address1:'134'},
+        {address1:'134'}
+        // {title : 'formData1Title',id:"formData1Title",address1:"formData1Title1",address2:"formData1Title2",address3:"formData1Title3",select:'formData1Title',date:'2222-12-12',gaga:"formData1Title"},
+        // {title : 'sdsd',id:"1111111111111111111",address:"11321321321",select:'fhdalkfdasklf;jdasklfd',date:'2222-12-12',gaga:"00000000000000"},
+    ],
+    callback: function (html) {
+        $('#gaga dt').click(function(){
+            $(this).next('dd').toggleClass('dn');
+        })
+        $('body').append(html);
+    }
+};
+LAPP.Component.Form(argsForm);
+</script>
+</body>
+</html>

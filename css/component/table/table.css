@@ -1,0 +1,105 @@
+.LAPP-component-tab-table{
+	margin-bottom:15px;
+	font-family:"微软雅黑";
+	color:#666;
+	table-layout:fixed;
+}
+.fs_span{
+	display:inline-block;
+	-moz-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+}
+.LAPP-component-tab-table tr th{
+	height:35px;
+	text-align:left;
+	padding-left:10px;
+	font-size:14px;
+	font-weight:bold;
+	background:#DCE2E8;
+}
+.LAPP-component-tab-table tr td{
+	height:35px;
+	line-height:35px;
+	padding-left:10px;
+	text-align:left;
+	font-size:12px;
+	text-overflow:ellipsis; 
+	white-space:nowrap; 
+	word-break:break-all;
+	overflow:hidden;
+}
+.LAPP-component-tab-table tr:nth-child(2n+1){
+	background:#F0F4F7;
+}
+.LAPP-component-tab-table tr:nth-child(2n+2){
+	background:#fff;
+}
+.LAPP-component-tab-table tr:nth-child(2n+2) td:nth-child(n+2){
+	color:#5DCF21;
+}
+.LAPP-component-tab-table tr:nth-child(2n+1) td:nth-child(n+2){
+	color:#8A89F3;
+}
+.noWidth-section{
+	position:relative;
+	font-family:'LAPP-font-icon';
+}
+.noWidth-section h3{
+	height:28px;
+	line-height:28px;
+	padding-left:10px;
+	font-size:14px;
+	color:#666;
+	font-family:'微软雅黑';
+}
+.noWidth-section::before,
+.noWidth-section::after{
+	position:absolute;
+	top:10px;
+	z-index:2;
+	color:#F3F9FF;
+	/*content:'\2614';*/
+}
+.noWidth-section::after{
+	right:10px;
+	/*content:'\2615';*/
+}
+.noWidth-section::before{
+	left:10px;
+}
+.noWidth-section table{
+	position:relative;
+	z-index:1;
+	min-width:100%;
+}
+.noWidth-section table tr td,
+.noWidth-section table tr th{
+	white-space: nowrap;
+	padding:0 10px;
+	text-align:center;
+	border:1px solid #C8D8E9;
+}
+.noWidth-section table tr th{
+	background:#92C2EE;
+	color:#fff;
+}
+.tFooter-div{
+	height:28px;
+	line-height:28px;
+	padding-right:10px;
+	text-align:right;
+	color:#FBA206;
+	font-size:14px;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+{
+
+	"formData" : [
+        {
+        	"title1":"数据标题1",
+            "show" : true,
+            "data" : [
+                {"textRight":"2014-12-26 16:06:19","textlabel":"企业111111111111","cls":"icon_wt"},
+                {"textRight":"2014-12-26 16:06:19","textlabel":"企业2","cls":"ico_us"}
+            ]
+        }
+    ],
+    "status" : "success"
+}

@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+/*
+   buttonlayer
+*/
+.LAPP-component-buttonlayer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:45px;
+	line-height:45px;
+	border-top:1px solid #D9D8DD;
+	box-shadow:0 0 5px #ccc;
+	overflow:hidden;
+	background:#fff;
+}
+.LAPP-component-buttonlayer a{
+	float:left;
+	padding:0;
+	height:45px;
+	font-size:14px;
+	color:#000;
+	font-family:'LAPP-font-icon';
+	border:none;
+	text-align:center;
+}
+#textOnly3::before{
+	display:block;
+	width:16px;
+	margin:0 auto;
+}
+.LAPP-component-buttonlayer a::before{
+	margin-right:5px;
+}
+.LAPP-component-buttonlayer a.icon1::before{
+	color:#1AD15F;
+	content:'\2665';
+}
+.LAPP-component-buttonlayer a.icon2::before{
+	color:#478CD7;
+	content:'\2666';
+}
+.LAPP-component-buttonlayer a.icon3::before{
+	color:#F29823;
+	content:'\2667';
+}

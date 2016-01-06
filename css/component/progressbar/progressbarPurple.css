@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+/*
+   progressbar
+*/
+.LAPP-component-progressbar{
+	border-right:1px solid #C8C8C8;
+	border-bottom:1px solid #C8C8C8;
+	font-family:'微软雅黑';
+	overflow:hidden;
+}
+.LAPP-component-progressbar>li{
+	float:left;
+	height:90px;
+	width:63px;
+	border-left:1px solid #C8C8C8;
+	text-align:center;
+	color:#777;
+	background:#fff;
+}
+.LAPP-component-progressbar>li.active{
+	position:relative;
+}
+.LAPP-component-progressbar>li>span{
+	display:block;
+}
+.progressbar-year,
+.progressbar-week{
+	height:20px;
+	line-height:20px;
+	margin-top:5px;
+}
+.progressbar-week{
+	margin-top:0;
+}
+.LAPP-component-progressbar>li>span.progressbar-data{
+	display:inline-block;
+	margin-top:3px;
+	width:33px;
+	height:33px;
+	font:bold 18px/33px '微软雅黑';
+	color:#008F06;
+	border-radius:30px;
+	background:#60D165;
+}
+.LAPP-component-progressbar>li.Clsexpired span.progressbar-data{
+	color:#777;
+	background:#E6E6E6;
+}
+.LAPP-component-progressbar>li.active span.progressbar-data{
+	color:#fff;
+	background:#7B4C82;
+}
+.LAPP-component-progressbar>li.active::before,
+.LAPP-component-progressbar>li.active::after{
+	display:block;
+	position:absolute;
+	top:0;
+	left:-1px;
+	width:65px;
+	height:100%;
+	box-shadow:0 0 15px #ccc;
+	content:'';
+}
+.LAPP-progressBar-purple>li.active span.progressbar-data{
+	background:#7B4C82;
+}
+.LAPP-progressBar-orange>li.active span.progressbar-data{
+	background:#F68C25;
+}

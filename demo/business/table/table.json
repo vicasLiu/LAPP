@@ -1,0 +1,19 @@
+ {
+
+    "formData" : {
+        "tHead" : [
+            {"xx":"详情1"}
+            
+        ],
+        "tBody" : [
+            {"name":"李四","age":"35","number":"30.00%"},
+            {"name":"黎明","age":"30","number":"10.00%"},
+            {"name":"吴王","age":"33","number":"30.00%"}
+        ],
+        "tFooter" : [
+            {"gaga" : "14001万元"}
+        ]  
+    },
+    "status" : "success" 
+
+}

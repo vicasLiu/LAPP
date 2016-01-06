@@ -1,0 +1,148 @@
+/*
+    calendar组件
+    Gaotd 2015-1-7
+*/
+.LAPP-calendar-box {
+    width: 100%;
+}
+
+.LAPP-calendar-showdate {
+    width: 248px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    border: 1px solid #e1e1e1;
+    color: #999;
+}
+.LAPP-calendar-clearfix {
+    background: #C4C4C4;
+    width: 100%;
+    border-bottom:1px solid #BAB9BE;
+}
+.LAPP-calendar-show-mn {
+    width: 120px;
+    text-align: center;
+    padding: 0 10px 0 0;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size:16px;
+    float: left;
+}
+.LAPP-calendar-data-table {
+    width: 100%;
+}
+
+.LAPP-calendar-data-table td, .LAPP-calendar-data-table th {
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    font-size: 14px;
+    color:#3D454D;
+    background:#fff;
+    border: 1px solid #E6E6E6;
+}
+.LAPP-calendar-data-table thead th{
+    border:none;
+    background: #EEEDF3;
+    height: 25px;
+}
+.LAPP-calendar-data-table td.active {
+    color: #333;
+  position: relative;
+}
+.LAPP-calendar-data-table td.active::before {
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    margin-left:-6px;
+    font-family:'LAPP-font-icon';
+    font-size: 12px;
+    color: #3C8DDA;
+    -moz-transform: scale(0.82);
+    -webkit-transform: scale(0.82);
+    -o-transform: scale(0.82);
+    transform: scale(0.82);
+    content:'\2601';
+    
+}
+.LAPP-calendar-data-table td.click {
+    color: #fff!important;
+    background-color: #c4c4c4;
+}
+.LAPP-calendar-data-table td.click::before {
+    color: #fff;
+}
+.LAPP-calendar-data-table td.current {
+    color: #fff!important;
+    background-color: #3C8DDA;
+}
+.LAPP-calendar-data-table td.current::before {
+    color: #fff;
+}
+.LAPP-calendar-data-table td.hover {
+    color: blue;
+}
+
+.LAPP-calendar-showDate2 {
+    width: 45px;
+    padding: 3px 5px;
+    color: #fff;
+    border: 0;
+    background: none;
+    text-align: center;
+    font-size: 15px;
+    disable: disable;
+}
+
+.LAPP-calendar-showDate2.active {
+    border: none;
+}
+.LAPP-calendar-month {
+    width: 20px;
+}
+.LAPP-calendar-prev-m,.LAPP-calendar-next-m {
+    width: 20px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font: bold 12px/40px "宋体";
+    float: left;
+}
+
+.LAPP-calendar-prev-y,.LAPP-calendar-next-y {
+    width: 18px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font: bold 12px/40px "宋体";
+    float: left;
+    display: none;
+}
+
+.LAPP-calendar-data-table thead th.calendarRed,
+.LAPP-calendar-data-table td.calendarRed {
+    color: #3C8DDA;
+}
+.LAPP-calendar-prev-m::before{
+  font-family:'LAPP-font-icon';
+  content:'\2614';
+  font-size: 11px;
+  color: #fff;
+}
+.LAPP-calendar-next-m::before{
+  font-family:'LAPP-font-icon';
+  content:'\2615';
+  font-size: 11px;
+  color: #fff;
+}
+
+.LAPP-calendar-title-container {
+  width: 170px;
+  margin: 0 auto;
+}
+div.clear {
+  clear: both;
+}

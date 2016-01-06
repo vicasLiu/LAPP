@@ -1,0 +1,278 @@
+/*
+    base
+*/
+@import url(icon.css);
+html,body{
+    overflow:hidden;
+    width:100%;
+    height:100%;
+    margin:0;
+    font-size:12px;
+    font-family:'微软雅黑';
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+    -webkit-text-size-adjust:none;
+    position:relative;
+    overflow-x: hidden;
+    background: #eeedf3;
+}
+h1,h2,h2,h3,h4,h5,h6{
+    margin:0;
+    font-size:100%;
+}
+p,dl,dd,form,figure{
+    margin:0;
+}
+td,th{
+    padding:0;
+}
+a,a:hover{
+    text-decoration:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent; /* For some Androids */
+}
+ol,ul{
+	padding:0;
+    margin:0;
+    list-style:none;
+}
+li{
+    list-style-type:none;
+}
+table{
+    border-collapse:collapse
+}
+img{
+    border:none;
+    vertical-align:middle;
+}
+em{
+    font-style:normal;
+}
+textarea,input{
+    padding:0;
+    margin:0;
+    resize:none;
+    outline:none;
+    vertical-align:middle;
+    -webkit-appearance:none;
+}
+.rel{
+    position:relative;
+}
+.abs{
+    position:absolute;
+}
+.l{
+    float:left;
+}
+.r{
+    float:right;
+}
+.dn{
+    display:none;
+}
+.b{
+    font-weight:bold;
+}
+.f12{
+	font-size:12px;
+}
+.red {
+	color: red;
+}
+/*html5 reset*/
+header,nav,article,section,aside,footer,figure,figcaption{
+	display:block;
+}
+/* begin nimation base */
+.in, .out {
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-duration: 500ms;
+        -moz-animation-timing-function: ease-in-out;
+        -moz-animation-duration: 500ms;
+}
+.slide.out {
+        -webkit-transform: translate3d(-100%,0,0);
+        -webkit-animation-name: slideouttoleft;
+        -moz-transform: translateX(-100%);
+        -moz-animation-name: slideouttoleft;
+}
+
+.slide.in {
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-animation-name: slideinfromright;
+        -moz-transform: translateX(0);
+        -moz-animation-name: slideinfromright;
+}
+
+.slide.out.reverse {
+        -webkit-transform: translate3d(100%,0,0);
+        -webkit-animation-name: slideouttoright;
+        -moz-transform: translateX(100%);
+        -moz-animation-name: slideouttoright;
+}
+
+.slide.in.reverse {
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-animation-name: slideinfromleft;
+        -moz-transform: translateX(0);
+        -moz-animation-name: slideinfromleft;
+}
+
+.slideup.out {
+        -webkit-animation-name: dontmove;
+        -moz-animation-name: dontmove;
+        z-index: 0;
+}
+
+.slideup.in {
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-animation-name: slideinfrombottom;
+        -moz-transform: translateY(0);
+        -moz-animation-name: slideinfrombottom;
+        z-index: 10;
+}
+
+.slideup.in.reverse {
+        z-index: 0;
+        -webkit-animation-name: dontmove;
+        -moz-animation-name: dontmove;
+}
+
+.slideup.out.reverse {
+        -webkit-transform: translate3d(0,100%,0);
+        z-index: 10;
+        -webkit-animation-name: slideouttobottom;
+        -moz-transform: translateY(100%);
+        -moz-animation-name: slideouttobottom;
+}
+
+.slidedown.out {
+        -webkit-animation-name: dontmove;
+        -moz-animation-name: dontmove;
+        z-index: 0;
+}
+
+.slidedown.in {
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-animation-name: slideinfromtop;
+        -moz-transform: translateY(0);
+        -moz-animation-name: slideinfromtop;
+        z-index: 10;
+}
+
+.slidedown.in.reverse {
+        z-index: 0;
+        -webkit-animation-name: dontmove;
+        -moz-animation-name: dontmove;
+}
+
+.slidedown.out.reverse {
+        -webkit-transform: translate3d(0,-100%,0);
+        -moz-transform: translateY(-100%);
+        z-index: 10;
+        -webkit-animation-name: slideouttotop;
+        -moz-animation-name: slideouttotop;
+}
+
+@-webkit-keyframes slideinfromright {
+    from { -webkit-transform: translate3d(100%,0,0); }
+    to { -webkit-transform: translate3d(0,0,0); }
+}
+
+@-webkit-keyframes slideinfromleft {
+    from { -webkit-transform: translate3d(-100%,0,0); }
+    to { -webkit-transform: translate3d(0,0,0); }
+}
+
+@-webkit-keyframes slideouttoleft {
+    from { -webkit-transform: translate3d(0,0,0); }
+    to { -webkit-transform: translate3d(-100%,0,0); }
+}
+
+@-webkit-keyframes slideouttoright {
+    from { -webkit-transform: translate3d(0,0,0); }
+    to { -webkit-transform: translate3d(100%,0,0); }
+}
+
+@-webkit-keyframes slideinfromtop {
+    from { -webkit-transform: translate3d(0,-100%,0); }
+    to { -webkit-transform: translate3d(0,0,0); }
+}
+
+@-webkit-keyframes slideinfrombottom {
+    from { -webkit-transform: translate3d(0,100%,0); }
+    to { -webkit-transform: translate3d(0,0,0); }
+}
+
+@-webkit-keyframes slideouttobottom {
+    from { -webkit-transform: translate3d(0,0,0); }
+    to { -webkit-transform: translate3d(0,100%,0); }
+}
+
+@-webkit-keyframes slideouttotop {
+    from { -webkit-transform: translate3d(0,0,0); }
+    to { -webkit-transform: translate3d(0,-100%,0); }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@-moz-keyframes slideinfromright {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(0); }
+}
+
+@-moz-keyframes slideinfromleft {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(0); }
+}
+
+@-moz-keyframes slideouttoleft {
+    from { -moz-transform: translateX(0); }
+    to { -moz-transform: translateX(-100%); }
+}
+
+@-moz-keyframes slideouttoright {
+    from { -moz-transform: translateX(0); }
+    to { -moz-transform: translateX(100%); }
+}
+
+@-moz-keyframes slideinfromtop {
+    from { -moz-transform: translateY(-100%); }
+    to { -moz-transform: translateY(0); }
+}
+
+@-moz-keyframes slideinfrombottom {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(0); }
+}
+@-moz-keyframes slideouttobottom {
+    from { -moz-transform: translateY(0); }
+    to { -moz-transform: translateY(100%); }
+}
+
+@-moz-keyframes slideouttotop {
+    from { -moz-transform: translateY(0); }
+    to { -moz-transform: translateY(-100%); }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+/* end nimation base*/
+.LAPP-layout{
+    width:100%;
+}

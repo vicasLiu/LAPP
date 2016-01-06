@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--IOS中Safari允许全屏浏览 （网站开启对 web app 程序的支持）-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- IOS中Safari顶端状态条样式 注意：若值为“black-translucent”将会占据页面位置，浮在页面上方（会覆盖页面 20px 高度 iphone4 和 itouch4 的 Retina 屏幕为 40px -->
+<meta name="apple-mobile-web-app-status-bar-style" content="red">
+<!--忽略将数字变为电话号码  不自动将地址和email转为链接地址-->
+<meta name="format-detection" content="telephone=no;address=no;email=no">
+<title>组件：cardlist</title>
+<!-- 全局样式 -->
+<link type="text/css" rel="stylesheet" href="../../../css/base.css"/>
+<!-- 外部JS文件 -->
+<script type="text/javascript" src="../../../core/lib/zepto.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea-css.js"></script>
+<script type="text/javascript" src="../../../core/base/seajs.config.js"></script>
+<script type="text/javascript" src="../../../core/lib/zTouch.js"></script>
+<script type="text/javascript" src="../../../core/base/util.js"></script>
+<script type="text/javascript" src="../../../core/lib/juicer.js"></script>
+<script type="text/javascript" src="../../../core/base/klass.js"></script>
+<script type="text/javascript" src="../../../core/base/basicPlug.js"></script>
+<script type="text/javascript" src="../../../core/base/loader.js"></script>
+<script type="text/javascript" src="../../../core/base/map.js"></script>
+<script type="text/javascript" src="../../../core/base/page.js"></script>
+<script type="text/javascript" src="../../../core/base/event.js"></script>
+<script type="text/javascript" src="../../../core/datacenter/dataCenter.js"></script>
+<script type="text/javascript" src="../../../core/base/animation.js"></script>
+<!--组件-->
+<script type="text/javascript" src="../../../core/widget/component/loading/loading.js"></script>
+<script type="text/javascript" src="../../../core/widget/component/toolbar/toolbar.js"></script>
+<script type="text/javascript" src="../../../core/widget/component/cardlist/cardlist.js"></script>
+</head>
+<body>
+<script>
+var args = {
+    op : {
+        render: "LAPP-header", 
+        id : "loading"
+    },
+    componentData : [
+         {type:'title',text: 'cardlist',show: true}
+    ],
+    callback: function (html) {
+        $('body').append(html);
+    }
+};
+LAPP.Component.Toolbar(args);
+var argsCardlist = {
+    op : {
+        id: 'Cardlist',
+        render : 'Cardlist',
+        isIcon : false,  // 是否需要图标
+        data : {
+            head : [
+                // { label : '合计' , field : 'field' }
+            ],
+            title : { label : '费用统计' , field : 'sss1' },
+            list : [
+                { label : '出发地' , field : 'address1',fn:function(data){
+                    // return '<img src="13.jpg">';
+                    return '<label>发货单号:'+ data.address1 +'</label><span>确认订单</span>';
+                } },
+                { label : '目的地' , field : 'address2' },
+                { label : '开始日期' ,cls:'1321' },
+                { label : '金额' , field : 'address4' }
+            ],
+            footer : [
+                { label : '金额' , field : 'address5' }
+            ]
+        }
+    },
+    componentData : {
+        head : [
+            { field : '100000000.00' }
+        ],
+        title : [{ sss : '费用统计1' },{ sss : '费用统计2' }],
+        list : [
+            [
+                { address1 : '深圳111',address2 : '北极',address3 : '2015-5-1',address4 : '1000000000' },
+                // { address1 : '深圳',address2 : '南极',address3 : '2015-10-1',address4 : '1000000' },
+                // { address1 : '深圳',address2 : '南极',address3 : '2015-10-1',address4 : '1000000' }
+            ],
+            [
+                { address1 : '深圳22',address2 : '北极',address3 : '2015-5-1',address4 : '1000000000' },
+                // { address1 : '深圳',address2 : '南极',address3 : '2015-10-1',address4 : '1000000' }
+            ]
+        ],
+        footer : [
+            { address5 : '100000000.00' }
+        ]
+    },
+    callback: function (html) {
+        $('body').append(html);
+    }
+};
+LAPP.Component.Cardlist(argsCardlist);
+</script>
+</body>
+</html>

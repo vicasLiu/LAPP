@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--IOS中Safari允许全屏浏览 （网站开启对 web app 程序的支持）-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- IOS中Safari顶端状态条样式 注意：若值为“black-translucent”将会占据页面位置，浮在页面上方（会覆盖页面 20px 高度 iphone4 和 itouch4 的 Retina 屏幕为 40px -->
+<meta name="apple-mobile-web-app-status-bar-style" content="red">
+<!--忽略将数字变为电话号码  不自动将地址和email转为链接地址-->
+<meta name="format-detection" content="telephone=no;address=no;email=no">
+<title>元件：Input</title>
+<!--&lt;!&ndash;全局样式&ndash;&gt;-->
+<link type="text/css" rel="stylesheet" href="../../../css/base.css"/>
+<link type="text/css" rel="stylesheet" href="../../../css/widgetBasic.css"/>
+<!-- 外部JS文件 -->
+<script type="text/javascript" src="../../../core/lib/zepto.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea.js"></script>
+<script type="text/javascript" src="../../../core/lib/sea-css.js"></script>
+<script type="text/javascript" src="../../../core/base/seajs.config.js"></script>
+<script type="text/javascript" src="../../../core/lib/zTouch.js"></script>
+<script type="text/javascript" src="../../../core/base/util.js"></script>
+<script type="text/javascript" src="../../../core/lib/juicer.js"></script>
+<script type="text/javascript" src="../../../core/base/klass.js"></script>
+<script type="text/javascript" src="../../../core/base/basicPlug.js"></script>
+<script type="text/javascript" src="../../../core/base/loader.js"></script>
+<script type="text/javascript" src="../../../core/base/map.js"></script>
+<script type="text/javascript" src="../../../core/base/page.js"></script>
+<script type="text/javascript" src="../../../core/base/event.js"></script>
+<script type="text/javascript" src="../../../core/datacenter/dataCenter.js"></script>
+<script type="text/javascript" src="../../../core/base/animation.js"></script>
+<!--元件-->
+<script type="text/javascript" src="../../../core/widget/basic/input.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+var args1 = {
+    type: 'textType',
+	placeholder: '默认类型：请输入内容',
+	id: 'textType',
+	clearNeed: true,
+	text: '',
+	cls: 'clstextType'
+};
+$('body').append(LAPP.Widget.Input(args1).html());
+$('body').append('<p>&nbsp;</p>');
+LAPP.Widget.Input(args1).event();
+var args2 = {
+    type: 'passwordType',
+	placeholder: '密码类型：请输入密码',
+	id: 'inputPassword',
+	text: '',
+	cls: 'clspasswordType'
+};
+$('body').append(LAPP.Widget.Input(args2).html());
+$('body').append('<p>&nbsp;</p>');
+var args3 = {
+    type: 'passwordType',
+	placeholder: '带有清除按钮：请输入内容',
+	clearNeed: true,
+	id: 'clearHas',
+	text: '',
+	cls: 'clsclearHas'
+};
+LAPP.Widget.Input(args3).event();
+$('body').append(LAPP.Widget.Input(args3).html());
+$('body').append('<p>&nbsp;</p>');
+var args4 = {
+    type: 'voiceHas',
+	// singLine: true,
+	// height : "45px",
+	isVoice : true,
+	placeholder: '带语音：请输入内容',
+	id: 'voiceHas1',
+	cls: 'clsvoiceHas'
+};
+$('body').append(LAPP.Widget.Input(args4).html());
+var args5 = {
+    type: 'voiceHas',
+	singLine: true,
+	height : "45px",
+	placeholder: '带语音：请输入内容',
+	id: 'voiceHas',
+	text: '',
+	cls: 'clsvoiceHas'
+};
+$('body').append(LAPP.Widget.Input(args5).html());
+</script>
+</body>
+</html>

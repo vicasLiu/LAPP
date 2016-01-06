@@ -1,0 +1,10 @@
+{
+	"data" : [{
+		"address" : "广东"
+	},{
+		"address" : "北京"
+	},{
+		"address" : "上海"
+	}],
+	"status" : "success"
+}

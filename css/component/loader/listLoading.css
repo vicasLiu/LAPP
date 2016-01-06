@@ -1,0 +1,142 @@
+@CHARSET "UTF-8";
+/*
+   listLoading
+*/
+
+div.downRefresh{
+    text-align: center;
+    line-height: 25px;
+    background: #eeedf3;
+    padding: 5px 0;
+    height: 20px;
+    border-bottom: 1px solid #CCCBD0;
+}
+div.leftDot{
+    width: 45%;
+    height: 20px;
+    float: left;
+    text-align: right;
+}
+div.downRefresh div#dot.dot{
+    width: 20px;
+    height: 20px;
+    background: url("ic_loading.png") left center no-repeat;
+    background-size: 20px 20px;
+    overflow: hidden;
+    float: right;
+}
+div.downRefresh div#dot.dot2{
+    width: 20px;
+    height: 20px;
+    background: url("ajax-loader.gif") left center no-repeat;
+    background-size: 20px 20px;
+    overflow: hidden;
+}
+#refreshText{
+    width: 55%;
+    float: right;
+    text-align: left;
+    text-indent: 3px;
+}
+/**
+ *
+ * Pull down styles
+ *
+ */
+.pullDown, .pullUp, .flip, ._default, .loading {
+	height:55px;
+	line-height:50px;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+	color:#999;
+	text-align: center;
+}
+.pullDown .pullDownIcon,._default .pullDownIcon, .pullUp .pullUpIcon,.loading .pullDownIcon,.flip .pullDownIcon{
+	position:absolute;
+	left:50%;
+	top: 21px;
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background:url(pull-icon@2x.png) 0 0 no-repeat;
+	-webkit-background-size:24px 48px; background-size:24px 48px;
+	text-align: center;
+	margin-left: -58px;
+}
+
+.flip .pullDownIcon {
+	background:url(pull-icon@3x.png) 0 bottom no-repeat;
+	-webkit-background-size:24px 48px;
+	background-size:24px 48px;
+}
+
+.flip .pullUpIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+.loading .pullDownIcon, .loading .pullUpIcon {
+	background-position:0 100%;
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transition-duration:0ms;
+
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+	from { -webkit-transform:rotate(0deg) translateZ(0); }
+	to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+.pullUpLabel {
+	display: inline-block;
+	position: relative;
+	top:-10px;
+}
+.pullDownLabel {
+	display: block;
+	position: relative;
+	line-height: 30px;
+	top:-7px;
+	width: 150px;
+	height: 25px;
+	margin: 0 auto;
+	font-size:12px;
+}
+.pullDownDate {
+	display: block;
+	line-height: 30px;
+	width: 150px;
+	height: 25px;
+	margin: 0 auto;
+	font-size:12px;
+}
+.list-scroll {
+	position1: relative;
+	top1: -56px;
+	left1: 0;
+}
+div.addMoreItem {
+	width: 100%;
+  font-size:13px;
+  height: 45px;
+  line-height:45px;
+  text-align: center;
+  /*background:-webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#eae8f0));*/
+  font-size: 14px;
+  color:#cfcfcf;
+}
+.ui-more-load {
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+}
+.more-load-icon {
+	background: url("loader.gif") 10px 12px no-repeat;
+	background-size: 20px 20px;
+	text-indent: 30px;
+}
+.addMoreItem a {
+	color: #999;
+}

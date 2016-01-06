@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+/*
+   toast
+*/
+.LAPP-component-dialog-success,
+.LAPP-component-dialog-failure{
+	position:absolute;
+	left:0;
+	height:50px;
+	line-height:50px;
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	background:rgba(0,0,0,.7);
+	color:#E84040;
+	font-family:"微软雅黑";
+}
+.LAPP-component-dialog-failure::before,
+.LAPP-component-dialog-success::before{
+	font-family:'LAPP-font-icon';
+	margin-right:5px;
+	content:'\2662';
+}
+.LAPP-component-dialog-success{
+	color:#3EDF46;
+}
+.LAPP-component-dialog-success::before{
+	content:'\2663';
+}

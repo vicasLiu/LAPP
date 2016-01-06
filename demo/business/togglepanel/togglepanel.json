@@ -1,0 +1,12 @@
+{
+	"formData" : {
+        "title" :[
+        	{"gaga":"togglepanel"}
+        ],
+        "toggleLi" : [
+        	{"textRight0" : "154.00个","textRight1" : "1454.00个"},
+        	{"textRight2" : "14.00个","textRight3" : "14.00个"}
+        ]
+    },
+     "status" : "success"
+}

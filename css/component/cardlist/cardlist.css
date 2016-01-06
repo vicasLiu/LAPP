@@ -1,0 +1,80 @@
+/*
+    cardlist组件
+    Gaotd 2015-1-15
+*/
+body{
+    background:#fff;
+}
+.LAPP-component-cardlist{
+    margin:10px;
+}
+.LAPP-component-cardlist-head,
+.LAPP-component-cardlist-footer{
+    height:35px;
+    text-align:right;
+    font:bold 16px/35px '微软雅黑';
+    color:#F39800;
+}
+.LAPP-component-cardlist-list{
+    margin-top:10px;
+}
+.LAPP-component-cardlist-list-title{
+    height:35px;
+    background:#E6F1FB;
+    font:bold 14px/35px '微软雅黑';
+    padding-left:10px;
+    color:#053E7C;
+}
+.LAPP-component-cardlist-list-dd{
+    position:relative;
+    margin-bottom:10px;
+    padding:10px;
+    background:#F3F9FF;
+}
+.LAPP-component-cardlist-list-dd>p,
+.LAPP-component-cardlist-list-dd-div{
+    height:30px;
+    line-height:30px;
+    overflow:hidden;
+}
+.LAPP-component-cardlist-list-dd>p label,
+.LAPP-component-cardlist-list-dd-div label{
+    float:left;
+    max-width:47%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#8D8D8E;
+    overflow:hidden;
+}
+.LAPP-component-cardlist-list-dd>p span,
+.LAPP-component-cardlist-list-dd-div span{
+    float:right;
+    max-width:47%;
+    text-align:right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.entry-trangle{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width:0;
+    height:0;
+    color:#fff;
+    line-height:10px;
+    border-right:34px solid transparent;
+    border-bottom:34px solid transparent;
+    border-top:34px solid #92C2EE;
+}
+.entry-trangle em{
+    display:block;
+    position:absolute;
+    top:-34px;
+    left:0;
+    width:20px;
+    line-height:20px;
+    text-align:center;
+}

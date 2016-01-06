@@ -1,0 +1,80 @@
+#containDiv {
+	list-style: none;
+}
+.LAPP-list-li {
+    border-bottom: 1px solid #ccc;
+}
+.LAPP-list{
+	background:#fff;
+}
+.LAPP-list-li{
+	padding:0 10px;
+	height:56px;
+	font:16px/55px "微软雅黑";
+	border-bottom:1px solid #D4D3D8;
+}
+.LAPP-list-li:first-child{
+	border-top:1px solid #D4D3D8;
+}
+
+.LAPP-list-scrollDiv {
+	height: inherit;
+	position: relative;
+}
+.LAPP-list-btnLi {
+	position: absolute;
+	right: -60px;
+	bottom: 0;
+	width: 60px;
+	height: inherit;
+}
+.LAPP-list-btnLi a{
+	float: left;
+	width: 60px;
+	height: inherit;
+	background: red;
+	text-align: center;
+	color: #fff;
+	vertical-align: text-bottom	;
+	text-decoration: none;
+	position: relative;
+}
+.slide-show {
+	-webkit-animation:bounceIn .4s .2s ease-in-out both;
+}
+
+.slide-hide {
+	-webkit-animation:bounceOut .4s .2s ease-in-out both;
+}
+@-webkit-keyframes bounceOut
+{
+	0%{-webkit-transform:translate(-60px)}
+	50%{-webkit-transform:translate(-40px)}
+	70%{-webkit-transform:translate(-20px)}
+	100%{-webkit-transform:translate(0px)} 
+}
+@-webkit-keyframes bounceIn
+{
+	0%{-webkit-transform:translate(0)}
+	50%{-webkit-transform:translate(-20px)}
+	70%{-webkit-transform:translate(-40px)}
+	100%{-webkit-transform:translate(-60px)}
+}
+.arrow{
+	position:relative;
+}
+.arrow::after{
+	position:absolute;
+	top:50%;
+	right:10px;
+	height:16px;
+	line-height:16px;
+	margin-top:-8px;
+	font-family:"LAPP-font-icon";
+	font-size:16px;
+	color:#D4D3D8;
+	content:'\1602';
+}
+.LAPP-list-clickLiArea{
+	height:100%;
+}

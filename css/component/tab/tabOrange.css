@@ -1,0 +1,45 @@
+/*
+    tab组件
+    Gaotd 2015-1-10
+*/
+.LAPP-component-tab{
+    height:35px;
+    line-height:35px;
+    margin:10px;
+    border:1px solid #F68C25;
+    border-radius:5px;
+    background:#fff;
+    overflow:hidden;
+}
+.LAPP-component-tab a{
+    display:inline-block;
+    position:relative;
+    height:100%;
+    text-align:center;
+    color:#F68C25;
+    font-size:14px;
+}
+.LAPP-component-tab a::after{
+    display:block;
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:1px;
+    background:#F68C25;
+    content:'';
+}
+
+.LAPP-component-tab a:last-child::after{
+    display:none;
+}
+.LAPP-component-tab a.active{
+    background:#F68C25;
+    color:#fff;
+}
+.LAPP-component-tab a:first-child{
+    border:5px 0 0 5px;
+}
+.LAPP-component-tab a:last-child{
+    border:0 5px 5px 0;
+}

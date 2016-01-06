@@ -1,0 +1,8 @@
+{
+  "data":
+  [
+    {"imgSrc": "shopLogo01.png", "TITLE": "SM广场吉家店", "PHONE": "0595-88345678", "ADD": "浙江省晋江市SM广场"},
+    {"imgSrc": "shopLogo02.png", "TITLE": "巴黎商街店", "PHONE": "0579-87345678", "ADD": "浙江省玉溪市巴黎商街"}
+  ],
+  "status" : "success"
+}

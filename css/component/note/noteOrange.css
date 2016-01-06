@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+/*
+   note
+*/
+.LAPP-input-area-voice,
+.LAPP-input-area-voice::before{
+	color:#F68C25;
+}

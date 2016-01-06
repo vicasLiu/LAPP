@@ -1,0 +1,21 @@
+{
+	"formData" : {
+	    "head" : [
+            { "field" : "100000000.00" }
+        ],
+        "title" : [{ "sss" : "费用统计1" },{ "sss" : "费用统计2" }],
+        "list" : [
+            [
+                { "address1" : "深圳111","address2" : "北极","address3" : "2015-5-1","address4" : "1000000000" },
+                { "address1" : "深圳","address2" : "南极","address3" : "2015-10-1","address4" : "1000000" }
+            ],
+            [
+                { "address1" : "深圳","address2" : "南极","address3" : "2015-10-1","address4" : "1000000" }
+            ]
+        ],
+        "footer" : [
+            { "address5" : "100000000.00" }
+        ]
+	},
+	"status" : "success"
+}

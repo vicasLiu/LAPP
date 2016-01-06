@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+/*
+   togglepanel
+*/
+.LAPP-togglepanel-dl>dt::after,
+.LAPP-togglepanel-dl>dt::before,
+.LAPP-togglepanel-dl>dt.active::after,
+.LAPP-togglepanel-dl>dt.active::before,
+.dd_div_list .dd_label::before{
+	font-family:"LAPP-font-icon";
+}
+.LAPP-togglepanel-dl .txt-input{
+	font-size:14px;
+	border:none;
+	text-align:right;
+}
+.LAPP-togglepanel-dl{
+	font-size:14px;
+	background:#F5F5F5;
+	border-bottom:1px solid #B3B3B3;
+}
+.LAPP-togglepanel-dl>dt{
+	height:44px;
+	line-height:44px;
+	padding:0 10px;
+	background:#fff;
+	border-top:1px solid #B3B3B3;
+}
+.LAPP-togglepanel-dl>dt::after{
+	position:absolute;
+	right:10px;
+	color:#B3B3B3;
+	font-size:20px;
+	content:'\1611';
+}
+.LAPP-togglepanel-dl>dt::before{
+	float:left;
+	margin-right:5px;
+	color:#BFBFBF;
+	font-size:21px;
+	content:'\1605';
+}
+.LAPP-togglepanel-dl>dt.active{
+	border-bottom:1px solid #B3B3B3;
+}
+.LAPP-togglepanel-dl>dt.active::after{
+	content:'\1610';
+}
+.LAPP-togglepanel-dl>dt.active::before{
+	position:relative;
+	color:#F68C25;
+	content:'\1616';
+}
+.LAPP-togglepanel-dl>dd{
+	margin:5px;
+	border:1px solid #D5D5D5;
+	border-radius:5px;
+	background:#fff;
+}
+.LAPP-togglepanel-dl .dd_div_list{
+	padding:0 10px;
+	min-height:45px;
+	overflow:hidden;
+	color:#777;
+	border-bottom:1px solid #ccc;
+}
+.LAPP-togglepanel-dl .dd_div_list:last-child{
+	border-bottom:none;
+}
+.LAPP-togglepanel-dl .dd_label{
+	float:left;
+	line-height:45px;
+	min-width:30px;
+	max-width:32%;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+}
+.LAPP-togglepanel-dl .dd_div_r{
+	float:right;
+	width:68%;
+	padding: 7px 0;
+	vertical-align:middle;
+	color:#777;
+	word-break:break-all;
+	overflow:hidden;
+	text-align:right;
+	
+}
+.LAPP-togglepanel-dl .icon_wt::before{
+	margin-right:5px;
+	color:#3C8DDA;
+	font-size:20px;
+	content:'\c695';
+}
+.LAPP-togglepanel-dl .icon_us::before{
+	margin-right:5px;
+	color:#7DC300;
+	font-size:20px;
+	content:'\c603';
+}
+.LAPP-togglepanel-dl .ip_text{
+	float:right;
+	width:85%;
+	height:28px;
+	line-height:28px;
+	margin-top:7px;
+	padding:0 5px;
+	background:#f0f0f0;
+	text-align:right;
+	border:1px solid #DCDCDC;
+	border-radius:3px;
+}
+
+
+
+
+
+
+
+
+
+
+

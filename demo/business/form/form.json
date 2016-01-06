@@ -1,0 +1,15 @@
+{
+	"detail":
+	[
+	 	{
+	 		"tel": "vvvvvvvvvvvv",
+	 		"add":"南山科技园",
+	 		"btnVal":false,
+	 		"password" : "123",
+	 		"email":"11111@qq.com",
+	 		"process":"11"
+	    }
+	 	 
+	],
+	"status" : "success" 
+}

@@ -1,0 +1,125 @@
+/*
+    attach组件
+    Gaotd 2015-1-7
+*/
+.LAPP-component-attach-pic a.icon-add::before,
+.LAPP-component-attach-pic a.icon-audio::before,
+.LAPP-component-attach-pic a.icon-video::before,
+.LAPP-component-attach-pic a em.remove::before{
+    font-family:"LAPP-font-icon";
+}
+.LAPP-component-attach-kk{
+    position:relative;
+    height:65px;
+    margin-top:10px;
+    padding-top:20px;
+    background:#DFDFDF;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    overflow:hidden;
+}
+.LAPP-component-attach-dot{
+    position:absolute;
+    top:3px;
+    right:10px;
+    height:7px;
+}
+.LAPP-component-attach-dot a{
+    float:left;
+    height:7px;
+    width:7px;
+    margin-left:2px;
+    border-radius:7px;
+    background:#D5D5D5;
+}
+.LAPP-component-attach-dot a.active{
+    background:#B2C1CC;
+}
+.LAPP-component-attach-pic{
+    height:66px;
+}
+.LAPP-component-attach-pic a{
+    position:relative;
+    float:left;
+    width:66px;
+    height:66px;
+    margin:0 0 15px 11px;
+    text-align:center;
+    border-radius:5px;
+    background:#fff;
+}
+.LAPP-component-attach-pic a em.remove{
+    position:absolute;
+    top:-6px;
+    right:-6px;
+    float:left;
+    width:14px;
+    height:14px;
+    border-radius:10px;
+    background:#fff;
+}
+.LAPP-component-attach-pic a em.remove::before{
+    font-size:15px;
+    border:1px solid #fff;
+    border-radius:10px;
+    color:#F1492F;
+    content:'\1603';
+}
+.LAPP-component-attach-pic a.icon-add{
+    color:#fff;
+    background:#46C37E;
+}
+.LAPP-component-attach-pic a.icon-add::before{
+    display:block;
+    padding:10px 0 2px 0;
+    color:#fff;
+    font-size:24px;
+    content:'\2649';
+}
+.LAPP-component-attach-pic a.icon-audio img{
+    display:none;
+}
+.LAPP-component-attach-pic a.icon-audio::before{
+    line-height:63px;
+    font-size:34px;
+    color:#46C37E;
+    content:'\2652'
+}
+.LAPP-component-attach-pic a img{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
+.LAPP-component-attach-pic a.icon-video::before{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:5;
+    margin:-18px 0 0 -15px;
+    font-size:30px;
+    color:#fff;
+    content:'\2650';
+}
+.LAPP-component-attach-pic a.icon-video::after{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:4;
+    width:20px;
+    height:20px;
+    margin:-10px 0 0 -10px;
+    font-size:30px;
+    background:#706766;
+    content:'';
+}
+.imgNone::before{
+    position:relative;
+    top:12px;
+    font-size:36px;
+    font-family:'LAPP-font-icon';
+    color:#ccc;
+    content:'\2651';
+}
+.imgNone img{
+    display:none
+}

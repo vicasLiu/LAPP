@@ -1,0 +1,198 @@
+/*
+    form组件
+    Gaotd 2015-1-10
+*/
+.islink-icon::before,
+.LAPP-form-group-ul li label::before,
+.LAPP-form-group-dl dt::after,
+.LAPP-form-group-dl dt.active::after,
+.dd_div_list .dd_label::before{
+    font-family:"LAPP-font-icon";
+}
+.LAPP-form-group{
+    font-family:"微软雅黑";
+    background:#E4E3EC;
+}
+.LAPP-form-group-title{
+    height:27px;
+    line-height:27px;
+    padding:0 10px;
+    font-size:12px;
+}
+.LAPP-form-group-ul{
+    border-top:1px solid #B3B3B3;
+    border-bottom:1px solid #B3B3B3;
+    background:#fff;
+}
+.LAPP-form-group-ul>li{
+    height:43px;
+    line-height:44px;
+    padding:0 10px;
+    border-bottom:1px solid #E6E6E6;
+    font-size:14px;
+    color:#333;
+}
+.LAPP-form-group-ul>li:last-child{
+    border:none;
+}
+.LAPP-form-group-ul>li>span{
+    float:right;
+}
+.islink-icon{
+    position:relative;
+    padding-right:27px!important;
+}
+.islink-icon::before{
+    position:absolute;
+    right:10px;
+    font-size:16px;
+    color:#D7D8DA;
+    margin-left:10px;
+    content:'\1602';
+}
+.LAPP-form-group-ul>li>label{
+    float:left;
+    color:#808080;
+}
+.LAPP-form-group-ul>li>label::before{
+    float:left;
+    margin-right:3px;
+    font-size:16px;
+}
+.LAPP-form-group-ul>li>label.icon1::before{
+    color:#8CC63F;
+    content:"\c607";
+}
+.LAPP-form-group-ul>li>label.icon2::before,
+.LAPP-form-group-ul>li>label.icon3::before{
+    color:#8CC63F;
+    content:"\c617";
+}
+.LAPP-form-group-ul>li>label.icon3::before{
+    color:#F15A24;
+}
+.LAPP-form-group-ul>li>label.icon4::before{
+    color:#F7931E;
+    content:"\c603";
+}
+.LAPP-form-group-ul>li>label.icon5::before{
+    color:#99f;
+    content:"\c612";
+}
+.LAPP-form-group-ul li span.after-none::before{
+    content:'';
+}
+.LAPP-form-group-ul>li>span .txt-input{
+    font-size:14px;
+    border:none;
+    text-align:right;
+}
+.LAPP-form-group-dl{
+    font-size:14px;
+    border-bottom:1px solid #B3B3B3;
+}
+.LAPP-form-group-dl>dt{
+    height:44px;
+    line-height:44px;
+    padding:0 10px;
+    background:#fff;
+    border-top:1px solid #B3B3B3;
+}
+.LAPP-form-group-dl>dt::after{
+    position:absolute;
+    right:10px;
+    color:#B3B3B3;
+    font-size:20px;
+    content:'\1611';
+}
+.LAPP-form-group-dl>dt.active{
+    border-bottom:1px solid #B3B3B3;
+}
+.LAPP-form-group-dl>dt.active::after{
+    content:'\1610';
+}
+.LAPP-form-group-dl>dd{
+    background:#F5F5F5;
+}
+.dd_div_list{
+    padding:0 10px;
+    min-height:45px;
+    line-height:45px;
+    overflow:hidden;
+    color:#777;
+    border-bottom:1px solid #ccc;
+}
+.dd_div_list:last-child{
+    border-bottom:none;
+}
+.dd_div_list .dd_label::before{
+    
+}
+.dd_label{
+    float:left;
+}
+.dd_div_r{
+    height:100%;
+    text-align:right;
+    overflow:hidden;
+}
+.icon_wt::before{
+    margin-right:5px;
+    color:#3C8DDA;
+    font-size:20px;
+    content:'\c695';
+}
+.icon_us::before{
+    margin-right:5px;
+    color:#7DC300;
+    font-size:20px;
+    content:'\c603';
+}
+.ip_text{
+    float:right;
+    width:85%;
+    height:28px;
+    line-height:28px;
+    margin-top:7px;
+    padding:0 5px;
+    background:#f0f0f0;
+    border:1px solid #DCDCDC;
+    border-radius:3px;
+
+}
+.form_spanText,
+.LAPP-widget-text,
+.LAPP-widget-password,
+.LAPP-widget-number,
+.LAPP-widget-date{
+    float:right;
+    width:85%;
+    height:28px;
+    line-height:28px;
+    margin-top:7px;
+    padding:0 5px;
+    text-align:right;
+    background:#f0f0f0;
+    border:1px solid #DCDCDC;
+    font-size:14px;
+    border-radius:3px;
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -o-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+}
+.LAPP-slider{
+    float:right;
+    margin:20px 15px 20px 0;
+}
+.LAPP-slide-text{
+    left:-55%;
+    bottom:-12px;
+}
+.LAPP-input-voice-container{
+    padding-bottom:10px;
+}
+#addressSelect3_textradioradio{
+    float:right;
+    overflow:hidden;
+}

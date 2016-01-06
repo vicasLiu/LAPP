@@ -1,0 +1,57 @@
+/*
+    process组件
+    Gaotd 2015-1-10
+*/
+.LAPP-component-process{
+    position:relative;
+    min-height:100%;
+    background:#fff;
+}
+.LAPP-component-process::before{
+    position:absolute;
+    top:0;
+    left:25px;
+    height:100%;
+    width:2px;
+    background:#DEDEDE;
+    content:'';
+}
+.LAPP-component-process-ul{
+    overflow:hidden;
+}
+.LAPP-component-process-ul>li{
+    position:relative;
+}
+.LAPP-component-process-ul>li::after{
+    display:block;
+    width:100%;
+    height:0;
+    clear:both;
+    content:'';
+}
+.LAPP-component-process-ul>li strong.icon{
+    float:left;
+    width:24px;
+    height:24px;
+    line-height:24px;
+    margin:11px;
+    text-align:center;
+    font-size:14px;
+    color:#fff;
+    border:3px solid #DEDEDE;
+    border-radius:15px;
+    background:#61BA5B;
+}
+.LAPP-component-process-ul>li.process-ul-li-end strong.icon{
+    background:#CC4B4B;
+}
+.process-right{
+    padding:12px 10px 10px 0;
+    line-height:22px;
+    overflow:hidden;
+}
+
+
+
+
+
