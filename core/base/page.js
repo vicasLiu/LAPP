@@ -315,7 +315,7 @@ if (!LAPP) {
 				});
 			} else {
 				seajs.config({
-					base: "../../../../APP/"
+					base: "../../../../LAPP/"
 				});
 			}
 			$.extend(LAPP.Loader, op);

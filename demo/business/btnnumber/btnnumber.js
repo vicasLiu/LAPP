@@ -3,7 +3,7 @@
 $(function(){
 	var page = new LAPP.Page();
 	page.config({
-		base : '../../../../APP/',
+		base : '../../../../LAPP/',
 		jsbase : '../../../',
 		cssbase : '../../../'
 	});
