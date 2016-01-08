@@ -1,8 +1,7 @@
 $(function(){
 	var page = new LAPP.Page();
 	page.config({
-        base : '../../../../APP/',
-		    jsbase : '../../../',
+		jsbase : '../../../',
         cssbase : '../../../'
 	});
 	page.Ready(function( loginInfo ){
