@@ -6,7 +6,6 @@ $(function(){
     var page = new LAPP.Page;
 
     page.config({
-        base: "../../../../app/",
         jsbase: "../../../",
         cssbase: "../../../"
     });

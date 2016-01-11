@@ -95,7 +95,7 @@ if(!LAPP){
 			js : "core/native/android.js"
 		},
 		iScroll : {
-			js:"core/widget/business/LAPPIscroll/LAPPIscroll.js"//'core/widget/business/iscroll/iscroll.js', 
+			js:'core/widget/component/iscroll/iscroll.js', 
 		},
 		loading : {
 			css : 'css/component/loading/loading.css',
