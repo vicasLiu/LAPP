@@ -1,4 +1,4 @@
 seajs.config({
-    base:"../../../../APP/"
+    base:"../../../../LAPP/"
     //base:''
 }); 
