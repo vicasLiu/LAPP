@@ -40,7 +40,7 @@ if(!LAPP){
 			callback : function( data ) {
 				if( LAPP.Util.isObject(data) ) {
 					loading.init("success");
-					if( data.status == true ) {
+					if( data.status == true || data.status == 'success' ) {
 						LAPP.Publisher.publish("receiveDataStatus", "success", inst);
 						if( $.isFunction(cb) ) {
 							cb(data);

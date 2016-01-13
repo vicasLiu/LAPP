@@ -17,5 +17,5 @@
             { "address5" : "100000000.00" }
         ]
 	},
-	"status" : "success"
+	"status" : true
 }
