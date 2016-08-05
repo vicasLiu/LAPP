@@ -2,8 +2,6 @@
  * @File
  * @Import
  * @CreatedBy LAPP Common Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -110,7 +108,7 @@ if(!LAPP){
         render : function(htm){
             var self = this;
             var renderTarget = self.options.render;
-             
+
             if(self.options.render == 'body'){
                 renderTarget = self.options.render;
             }else{

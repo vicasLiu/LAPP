@@ -2,8 +2,6 @@
  * @File 钟表组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -22,7 +20,7 @@ if (!LAPP) {
 		var html = '<div id="LAPP-clock-container"><div id="LAPP-clock"><b class="LAPP-clock-core"></b><div id="LAPP-clock-h"><b></b></div><div id="LAPP-clock-m"><b></b></div>'
 				 + '<div id="LAPP-clock-s"></div>'
 				 + '<div id="LAPP-clock-mark"></div>'
-				 + '<div id="LAPP-clock-date"></div>' 
+				 + '<div id="LAPP-clock-date"></div>'
 				 + '</div></div><div id="LAPP-secondplus">00:00:00</div>';
 		return html;
 	};
@@ -62,23 +60,23 @@ if (!LAPP) {
 			self.fn();
 			LAPP.Publisher.publish("businessWidgetLoaded", this);
 		},
-		fn : function() { 
+		fn : function() {
 	            var $$$=function(id){return document.getElementById(id)};
 	            //写入刻度DOM，以及刻度的定位
 	            function mark(){
-	                //圆的半径  
-	                var r=parseFloat($("#LAPP-clock").width())/10; 
-	                //插入DOM  
-	                for(var i=1;i<61;i++){      
-	                	$$$("LAPP-clock-mark").innerHTML+="<b class='c"+i+"'><i style='display: none;'></i></b>";     
+	                //圆的半径
+	                var r=parseFloat($("#LAPP-clock").width())/10;
+	                //插入DOM
+	                for(var i=1;i<61;i++){
+	                	$$$("LAPP-clock-mark").innerHTML+="<b class='c"+i+"'><i style='display: none;'></i></b>";
 	                    var ci=document.getElementsByClassName("c"+i)[0];
-	                     var cii=ci.getElementsByTagName("i")[0];  
-	                    //利用正弦定理计算刻度的定位         
-	                    ci.style.left=r+20+(r+35)*(Math.sin(i*6*2*Math.PI/360))+"px";   
+	                     var cii=ci.getElementsByTagName("i")[0];
+	                    //利用正弦定理计算刻度的定位
+	                    ci.style.left=r+20+(r+35)*(Math.sin(i*6*2*Math.PI/360))+"px";
 	                    /*注意正弦的角度制算法和弧度制算法，Math.sin的参数是弧度制算法，所以先把角度转换成弧度，再计算*/
-	                    ci.style.top=r+25-(r+35)*(Math.sin((90-i*6)*2*Math.PI/360))+"px";     
-	                    //计算转动的角度    
-	                    /*other*/ 
+	                    ci.style.top=r+25-(r+35)*(Math.sin((90-i*6)*2*Math.PI/360))+"px";
+	                    //计算转动的角度
+	                    /*other*/
 	                    ci.style.transform="rotate("+i*6+"deg)";
 	                    /*FF*/
 	                    ci.style.MozTransform="rotate("+i*6+"deg)";
@@ -91,7 +89,7 @@ if (!LAPP) {
 	                    //大刻度
 	                    if(i%5==0){
 	                        ci.className="c"+i+" "+"big-mark";
-	                        cii.innerHTML=i/5; 
+	                        cii.innerHTML=i/5;
 	                    }
 	                    //小刻度
 	                    else{
@@ -99,7 +97,7 @@ if (!LAPP) {
 	                        ci.removeChild(cii);
 	                    }
 	                    //把数字转正
-	                    var iRotate=-i*6; 
+	                    var iRotate=-i*6;
 	                    cii.style.transform="rotate("+iRotate+"deg)";
 	                    cii.style.MozTransform="rotate("+iRotate+"deg)";
 	                    cii.style.WebkitTransform="rotate("+iRotate+"deg)";

@@ -2,8 +2,6 @@
  * @File 布局组件
  * @Import
  * @CreatedBy LAPP Common Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -65,7 +63,7 @@ if(!LAPP){
                 for(var i in value){
                     var styleStr = resolveStyle(value[i]);
                     // if(/\d/.test(value[i].height)){//判断高度是否为数字
-                    //    var tempDiv = '<div id="'+i+'" class="LAPP-layout '+(value[i].cls?value[i].cls:"")+'" style="display:none;top:'+value[i].top+'px;position:absolute;width:100%;height:'+value[i].height+'px;"></div>'; 
+                    //    var tempDiv = '<div id="'+i+'" class="LAPP-layout '+(value[i].cls?value[i].cls:"")+'" style="display:none;top:'+value[i].top+'px;position:absolute;width:100%;height:'+value[i].height+'px;"></div>';
                     // }else{
                     //     var tempDiv = '<div id="'+i+'" class="LAPP-layout '+(value[i].cls?value[i].cls:"")+'" style="display:none;top:'+value[i].top+'px;position:absolute;width:100%;height:'+(totalHeight-value[i].top)+'px;"></div>';
                     // }

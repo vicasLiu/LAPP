@@ -2,8 +2,6 @@
  * @File downRefresh组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -67,7 +65,7 @@ if(!LAPP){
             inst.render(htm);
         };
     };
-    var tempScrollY, _startTime; 
+    var tempScrollY, _startTime;
     var ListLoading = Klass.define(LAPP.BasicPlug, {
         constructor : function( pointer ) {
             this.$pointer = pointer;
@@ -105,8 +103,8 @@ if(!LAPP){
                         }
                     }
                 },
-                checkDOMChanges:true, 
-                hScrollbar:false, 
+                checkDOMChanges:true,
+                hScrollbar:false,
                 vScrollbar:true,
                 vScroll: true,
                 topOffset : 56,
@@ -115,12 +113,12 @@ if(!LAPP){
                 useTransition : true,
                 onScrollMove: function () {
                     self.onScrollMove(self.myScroll);
-                    //LAPP.Publisher.publish("onScrollMove", self.myScroll, self); 
+                    //LAPP.Publisher.publish("onScrollMove", self.myScroll, self);
                     tempScrollY = self.myScroll.y;
                 },
                 onScrollStart:function (e) {
                     self.onScrollStart();
-                    //LAPP.Publisher.publish("onScrollStart", self); 
+                    //LAPP.Publisher.publish("onScrollStart", self);
                     var target = e.target;
                     var targetType = $(target).attr("el-type");
                     var type = LAPP.Util.getDevice();
@@ -149,17 +147,17 @@ if(!LAPP){
                 },
                 onBeforeScrollEnd: function() {
                     self.onBeforeScrollEnd();
-                   // LAPP.Publisher.publish("onBeforeScrollEnd", self);  
+                   // LAPP.Publisher.publish("onBeforeScrollEnd", self);
                 },
                 onScrollEnd: function (myScroll) {
 //                  console.info(1);
                     if (tempScrollY > 10) {
                         self.onScrollEnd();
-                        //LAPP.Publisher.publish("onScrollEnd", self);  
+                        //LAPP.Publisher.publish("onScrollEnd", self);
                         LAPP.Publisher.publish("pullDown", self);
                     } else {
                         self.onScrollCollapse();
-                       // LAPP.Publisher.publish("onScrollCollapse", self);  
+                       // LAPP.Publisher.publish("onScrollCollapse", self);
                     }
                     tempScrollY = 0;
                     self.startScrollTime();
@@ -181,7 +179,7 @@ if(!LAPP){
                 }
                 LAPP.Publisher.publish("iSrollLoadedFinished", self.myScroll, self);
                 LAPP.Publisher.publish("businessWidgetLoaded", self);
-            });         
+            });
         },
         render : function( htm ) {
             var op = this.options;
@@ -199,7 +197,7 @@ if(!LAPP){
             $('#' + this.options.render).children('div').children("div.addMoreItem").hide();
 //            $('#' + this.options.containerId).attr("style","display:block");
             this.noNeedLoading = true;
-            
+
             // 没有下拉加载更多时最后一行 li 下面增加一条线
             $('#' + this.options.render +' ul.LAPP-list').addClass('LAPP-list-last-border');
 
@@ -234,7 +232,7 @@ if(!LAPP){
                 pullDownEl.querySelector('.pullDownLabel').innerHTML = '继续下拉可刷新';
                 myScroll.minScrollY = -56;
             }
-            
+
 //          //解决列表数据不够时可上拉 上面的数据会被挡住
             var __$pullDown = $('#' + this.options.render +' .list-scroll div:first-child');
             if(__$pullDown.css('display') == 'none' && myScroll.maxScrollY < 0) myScroll.maxScrollY = 0;
@@ -255,7 +253,7 @@ if(!LAPP){
                 } else {
 
                 }
-                
+
                 /*
                 if(this.noNeedLoading && myScroll.maxScrollY < 0) myScroll.maxScrollY = 0;
                 this.that = myScroll;

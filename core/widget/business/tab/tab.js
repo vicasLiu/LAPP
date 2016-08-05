@@ -2,8 +2,6 @@
  * @File 切换选项组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */

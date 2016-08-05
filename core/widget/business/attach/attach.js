@@ -2,8 +2,6 @@
  * @File attach 附件组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -276,7 +274,7 @@
 		                 	self.instiSroll.refresh();
 						},
 						"removeAttach" : function() {
-							
+
 						},
 						"attachClick" : function( p ) {
 							var $this = p.current;
@@ -286,7 +284,7 @@
 							}else if( clickType == "open" ){
 								self.showPIC($this);
 							}else{
-								
+
 							}
 						}
 					}
@@ -340,7 +338,7 @@
 			this.instiSroll = iScroll_;
 			EventCollector.initEvents(op.events);
 			LAPP.Publisher.publish("componentLoadedFinished", obj, this);
-			
+
 			if( $.isFunction( op.cb ) ) {
 				op.cb(o);
 			}
@@ -349,7 +347,7 @@
 			var src = obj.attr("attachPath");
 			var type = obj.attr("type");
 			if(src == "undefined" || src == ""){
-				
+
 			}else{
 				if(type == "image/pjpeg") {//照相图片
 					LAPP.NativeAPI.openPhoto(src);

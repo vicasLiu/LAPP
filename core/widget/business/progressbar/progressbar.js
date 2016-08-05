@@ -2,8 +2,6 @@
  * @File 工具栏组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -21,8 +19,8 @@ if(!LAPP){
     };
 
 	var View = function(inst){
-		/*var __createHtml: function(renderTarget,ele ,inst) {	
-			var ProgressBar = ''; 
+		/*var __createHtml: function(renderTarget,ele ,inst) {
+			var ProgressBar = '';
 			var op = this.options;
 			var liHeight = op.liHeight ||75;
 			var liWeight = op.liWeight ||60;
@@ -30,10 +28,10 @@ if(!LAPP){
 			var current_day = inst.getCurrentDay();
 			$.each(ele,function(key,value){
 				var li = '';
-				
+
 				for(var i in value) {
 					var temp = '<p>'+value[i]+'</p>';
-					li += temp; 
+					li += temp;
 				}
 				var data_day = value.date + "-" + value.day;
 				//当天
@@ -50,7 +48,7 @@ if(!LAPP){
 				else{
 					li = '<li style="height:'+liHeight+'px;width:'+liWeight+'px" state="before" day="'+data_day+'">'+li+'</li>'
 				}
-				
+
 				ul +=li;
 			});
 			ul = '<div id="'+op.id+'Div" style="width:480px"><ul id="'+op.id+'">'+ul+'</ul></div>';
@@ -131,18 +129,18 @@ if(!LAPP){
 				$("div#" +op.id+"Div").css("width",$width)
 				$("div#progressbar").css("right","100px");
 			},200);
-			this.loadScroll(renderTarget); 
+			this.loadScroll(renderTarget);
 			EventCollector.initEvents(op.events);
 			var tempP = $('#progressBar li').filter(function(state) {  return $(this).attr("state") == "today";
 			}).index()*-61+120;
 		},
 		loadScroll: function(renderTarget){
 			var myScroll = new iScroll(renderTarget,{
-				hScrollbar:false,  
-				hScroll: true, 
-				vScrollbar:false,  
-				vScroll: false,    
-				checkDOMChanges: true,  
+				hScrollbar:false,
+				hScroll: true,
+				vScrollbar:false,
+				vScroll: false,
+				checkDOMChanges: true,
 				onBeforeScrollStart:function (e) {
                     var target = e.target;
                     var type = LAPP.Util.getDevice();

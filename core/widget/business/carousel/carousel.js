@@ -2,8 +2,6 @@
  * @File 旋转木马组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-24
  */
@@ -87,7 +85,7 @@ if(!LAPP){
         render : function(htm) {
             var op = this.options;
             var target = op.render;
-            $("#"+target).html(htm);            
+            $("#"+target).html(htm);
             EventCollector.initEvents(op.events);
             LAPP.Publisher.publish("componentLoadedFinished", this);
         }

@@ -2,8 +2,6 @@
  * @File 流程图组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember ShiLei
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-24
  */
@@ -19,7 +17,7 @@ if(!LAPP){
 	flowchart = function( pointer ) {
 		this.$pointer = pointer;
 	}
-	
+
 	flowchart.prototype = {
 		constructor : flowchart,
 		init : function(options) {
@@ -62,7 +60,7 @@ if(!LAPP){
 				, nodeName = eleNode[i]['people-data']
 				, nodeId = nodeObj.id
 				, stepArray.push(nodeStep);
-				
+
 				if(nodeName.length > 0) {
 					for( var j = 0 ; j < nodeName.length ; j++ ) {
 						var obj = nodeName[j], cde = this.getXY({
@@ -74,13 +72,13 @@ if(!LAPP){
 							status : obj.status,
 							index : j
 						});
-						
-						boxShadow = ( obj.status == "0" ? 
-						              "box-shadow: -3px 3px 5px #F0D8DA,-3px -3px 5px #F0D8DA,3px -3px 5px #F0D8DA,3px 3px 5px #F0D8DA;" : 
-						              (obj.status == "-1") ? 
+
+						boxShadow = ( obj.status == "0" ?
+						              "box-shadow: -3px 3px 5px #F0D8DA,-3px -3px 5px #F0D8DA,3px -3px 5px #F0D8DA,3px 3px 5px #F0D8DA;" :
+						              (obj.status == "-1") ?
 						              "box-shadow: -3px 3px 5px #ddd,-3px -3px 5px #ddd,3px -3px 5px #ddd,3px 3px 5px #ddd;"
 						              : "" );
-						
+
 						nodeHtml += '<div class="node '+(obj.status == "2"?"boder end actionNode1":"")+'" style="top : '+cde.top+'px;left : '+cde.left+'px;'+(obj.img == ""?"":"background:url("+obj.img+") no-repeat")+';background-size:76px 76px;'+boxShadow+'" id="'+obj.id+'">'+
 										'<div class="status" style="background : url('+(obj.status == '1'?"../public/css/flowchart/yes.png":(obj.status == '0'?"../public/css/flowchart/no.png":""))+') no-repeat;background-size:32px 32px"></div>'+
 										'<span class="name">'+obj.name+'</span>'+
@@ -105,7 +103,7 @@ if(!LAPP){
 //								 		'&nbsp;</div>';
 			}
 			$("#flowchart").append( nodeHtml );
-			
+
 			this.iscorll('wrapper-flowChart');
 			this.drawLine();
 		},
@@ -127,7 +125,7 @@ if(!LAPP){
 				, previousLeft = ''
 				, bgColor = ''
                 ;
-			
+
 			for( var i = stepArray.length - 1 ; i > 0 ; i-- ) {
 				 obj = calculate[stepArray[i]];
 				 previousObj = calculate[stepArray[i - 1]];
@@ -138,12 +136,12 @@ if(!LAPP){
 						 top = Number( obj.nodes[j].top );
 						 left = Number( obj.nodes[j].left );
 						 bgColor = ((obj.nodes[j].status == '-1' || obj.nodes[j].status == '2')?"#bbb":"");
-						  
+
 						 for( var n = previousObj.nodes.length - 1 ; n >= 0 ; n-- ) {
 							 previousId = previousObj.nodes[n].id;
 							 previousTop = Number( previousObj.nodes[n].top );
 							 previousLeft = Number( previousObj.nodes[n].left );
-							 
+
 							 //Y X
 							 if( formId == previousId ) {
 								 //Y线
@@ -177,13 +175,13 @@ if(!LAPP){
 								 		''+(bgColor != ""?"background:"+bgColor+";":"")+''+
 								 		'	left:'+(left - previousLeft < 0?left+40:previousLeft+40)+'px;">' +
 								 		'&nbsp;</div>';
-								 
+
 							 }
 				 		 }
 					 }
 				 }
 			}
-			
+
 			$(htm).appendTo('#flowchart');
 		},
 		coordinate : function (o) {
@@ -229,7 +227,7 @@ if(!LAPP){
 				, previousLeft = ''
 				, previousObj = ''
 				, index = o.index;
-			 
+
 			//存在上节点
 			 if( previousStep >= 0 ) {
 				 previousObj = calculate[previousStep];
@@ -239,7 +237,7 @@ if(!LAPP){
 					 }
 				 }
 			 }
-			 
+
 			if( type === '串发') {
 				//串发
 				left = ( previousLeft != '' ? previousLeft : step * 100 + 20 );
@@ -254,14 +252,14 @@ if(!LAPP){
 					if(nodeData[1]['people-data'].length == 1) {
 						left = 20;
 					} else {
-						left = 120;					
+						left = 120;
 					}
 				} else {
 					left = wwidth/2 - 40;
 				}
 				top = 10;
 			}
-			
+
 			o['top'] = top, o['left'] = left, allWidth = (allWidth > left?allWidth:left), allHeight = top
 			, endTop = top, endLeft = left;
 			this.coordinate(o);

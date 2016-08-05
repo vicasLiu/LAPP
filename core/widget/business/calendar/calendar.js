@@ -2,8 +2,6 @@
  * @File 日历组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -141,7 +139,7 @@ if(!LAPP){
 						},
 						handle: {
 							"clickDay:before": function (p) {
-								 
+
 								if ($(p.current).html() !== '') {
 									if ($(p.current).attr('class') !== 'current') {
 										$('td').removeClass('click');

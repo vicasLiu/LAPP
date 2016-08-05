@@ -2,8 +2,6 @@
  * @File 搜索组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember Guo yonglong
- * @Email 
  * @Module LAPP
  * @Date 2014-03-26
  */
@@ -56,13 +54,13 @@ if(!LAPP){
 				throw new Error('Search Components: template or showKey is null');
 				return false;
 			}
-			
+
 			//加载Dom
 			this.createHtml(renderTarget,ele);
 			//
 			this.fn();
 			//
-			//this.loadScroll(renderTarget);  
+			//this.loadScroll(renderTarget);
 		},
 		createHtml: function (renderTarget) {
 			var options = this.options;
@@ -81,7 +79,7 @@ if(!LAPP){
 			} else {
 				$searchList.css("top", parseInt($render.css("top")) + parseInt($render.css("height")))
 			}
-			
+
 			$render.after($searchList);
 
 			// 添加滚动条
@@ -112,7 +110,7 @@ if(!LAPP){
 				if( LAPP.Util.isArray(searchData) ) {
 					var htm = "";
 					for(var k = 0; k < searchData.length; ++k){
-						htm += '<li><a href="javascript:;">'+ searchData[k] +'</a></li>';	
+						htm += '<li><a href="javascript:;">'+ searchData[k] +'</a></li>';
 					}
 					$searchList.find("ul").html(htm);
 				}
@@ -171,7 +169,7 @@ if(!LAPP){
 				, i, l, item
 				, html = []
 				;
-			
+
 			if ( LAPP.Util.isArray( data ) ) {
 				//for (i = 0, l = data.length; i < l; i +=1) {
 					//item = data[i];
@@ -219,8 +217,8 @@ if(!LAPP){
 		loadScroll: function(render) {
 			this.myScroll && this.myScroll.destroy();	// 先去掉之前的滚动条
 			this.myScroll = new iScroll(render,{
-				checkDOMChanges:true, 
-				hScrollbar:true, 
+				checkDOMChanges:true,
+				hScrollbar:true,
 				vScrollbar:true,
 				vScroll: true,
 				useTransition : true,
@@ -228,13 +226,13 @@ if(!LAPP){
 
 				},
 				onScrollMove: function () {
-					
+
 				},
 				onScrollEnd: function () {
 
 				}
 			});
-			$('#'+ render +' ul').css({"transform": "translate3d(0px, 0px, 0px) scale(1)"});	
+			$('#'+ render +' ul').css({"transform": "translate3d(0px, 0px, 0px) scale(1)"});
 		}
 
 	};

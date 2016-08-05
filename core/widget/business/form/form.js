@@ -2,8 +2,6 @@
  * @File 表单组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-24
  */
@@ -491,7 +489,7 @@ if (!LAPP) {
             inst.view.init( inst,data );
         };
     };
- 
+
     var Form = Klass.define(LAPP.BasicPlug, {
         constructor : function( pointer ) {
             this.$pointer = pointer;
@@ -612,7 +610,7 @@ if (!LAPP) {
                         "switchBtnClick" : function(p){
                             var $this = p.current;
                              $this.parent().toggleClass('bg-green');
-                 
+
                         }
                     }
                 }

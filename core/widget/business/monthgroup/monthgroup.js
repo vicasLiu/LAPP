@@ -2,8 +2,6 @@
 * @File 日期时间组件
 * @Import
 * @CreatedBy LAPP Mobile Components Development Group
-* @GroupMember zengnanyun
-* @Email suchiva@126.com
 * @Module LAPP
 * @Date 2015-3-2
 */
@@ -36,7 +34,7 @@ if(!LAPP){
 		View
 	*/
 	var View = function (inst) {
-	
+
 		this.init = function (inst,data) {
 			seajs.use("core/widget/component/monthgroup/monthgroup.js",function(){
                 LAPP.Component.Monthgroup({op:inst.options,componentData:data,callback:function(html){inst.render(html);}});
@@ -106,7 +104,7 @@ if(!LAPP){
 			if(formData){
 				this.setData(formData);
 			}
-			LAPP.Publisher.publish("businessWidgetLoaded", self); 
+			LAPP.Publisher.publish("businessWidgetLoaded", self);
 		},
 		setData : function( data ) {
 			this.data = data;

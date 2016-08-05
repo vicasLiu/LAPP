@@ -2,8 +2,6 @@
  * @File 备注组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -97,7 +95,7 @@ if(!LAPP){
                 $(renderTarget).css(self.options.css);
             };
             var top = $("#"+self.options.id+'T').offset().top+self.options.height;
-            
+
             $(renderTarget).find(".voice_input_cls").css({
                 top : (top -15)
             });
@@ -105,7 +103,7 @@ if(!LAPP){
             if($.isFunction(self.options.cb) ){
                 self.options.cb();
             }
-            
+
            // EventCollector.initEvents(this.options.events);
         },
         fn: function( ){

@@ -2,8 +2,6 @@
  * @File timepick
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember ShiLei LiuSiWei ZhangHang Gaotd
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-06-20
  */
@@ -19,7 +17,7 @@ if(!LAPP){
 	 */
 	/*var subEvent = function(inst) {
 		LAPP.Publisher.unsubscribe("getParam", inst);
-		LAPP.Publisher.unsubscribe("dataFinished", inst); 
+		LAPP.Publisher.unsubscribe("dataFinished", inst);
 		LAPP.Publisher.subscribe("dataFinished", function( data ){
 			inst.renderClass(data);
 		}, inst);
@@ -44,7 +42,7 @@ if(!LAPP){
 	 * @ param array ele : 已经选中的事件数组
 	 * @ return 无
 	 */
-	var View = function( inst ) { 
+	var View = function( inst ) {
 		/*var __createHtml = function(renderTarget,id) {
 	        var Timepick = '<div class="LAPP-timepick" id="'+id+'"><ul class="LAPP-timepick-ul">';
 	        for(var i=0;i<24;i++){
@@ -100,7 +98,7 @@ if(!LAPP){
 					},
 					handle: {
 						"clickFn": function (p) {
-							 
+
 							//self.timeClick(p.current);
 						}
 					}
@@ -118,11 +116,11 @@ if(!LAPP){
         },
 		// loadScroll: function(renderTarget){
 		// 	var myScroll = new iScroll(renderTarget,{
-		// 		hScrollbar:false,  
-		// 		hScroll: true, 
-		// 		vScrollbar:false,  
+		// 		hScrollbar:false,
+		// 		hScroll: true,
+		// 		vScrollbar:false,
 		// 		vScroll: false,
-		// 	});	
+		// 	});
 		// },
 		render : function(html) {
 			var self = this;
@@ -155,7 +153,7 @@ if(!LAPP){
 		// timeClick : function(obj) {
 		// 	var __totalnum = function(obj) {
 		// 		var green_arr = [];
-				
+
 		// 		for(var num=0;num<$(obj).length;num++){
 		//     		if($(obj).eq(num).hasClass('bg-green')){
 		//     			var gvalue = $(obj).eq(num).val();
@@ -173,7 +171,7 @@ if(!LAPP){
 	 //        	alert('时间已选中！');
 	 //        }else{
 	 //        	var index = $(obj).index(),
-	 //        		index1 = 0; 
+	 //        		index1 = 0;
 		// 		// 查找到第一个li包含的bg-green
 		// 		while(!$(timepick_ul_li).eq(index1).hasClass('bg-green')){
 		// 			index1++;
@@ -192,8 +190,8 @@ if(!LAPP){
 		//         			alert('选择的区间有已经选中！');
 		//         			__totalnum(timepick_ul_li);
 		//         			return false;
-		//         		}else{ 
-		//         			$(timepick_ul_li).eq(m).addClass('bg-green'); 
+		//         		}else{
+		//         			$(timepick_ul_li).eq(m).addClass('bg-green');
 		//         		}
 		//         	}
 		//         }

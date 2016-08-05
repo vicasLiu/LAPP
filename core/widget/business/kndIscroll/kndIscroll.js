@@ -2,8 +2,6 @@
  * @File 滚动条组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember ShiLei LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -21,7 +19,7 @@ if(!LAPP){
 	var LAPPIscroll = function( pointer ) {
 		this.$pointer = pointer;
 	};
-	var tempScrollY, _startTime; 
+	var tempScrollY, _startTime;
 	LAPPIscroll.prototype = {
 		constructor : LAPPIscroll,
 		init : function( options ) {
@@ -37,7 +35,7 @@ if(!LAPP){
 			this.$active = active;
 		},
 		getActive : function() {
-			return this.$active; 
+			return this.$active;
 		},
 		startScrollTime: function () {
 			_startTime =  new Date().getTime();
@@ -49,19 +47,19 @@ if(!LAPP){
 			var self = this;
 			var render = options.render;
 			var defaultOp = {
-				checkDOMChanges:true, 
-				hScrollbar:false, 
+				checkDOMChanges:true,
+				hScrollbar:false,
 				vScrollbar:true,
 				vScroll: true,
 				x: 0,
 				y: 0, //初次加载默认位置
 				useTransition : true,
 				onScrollMove: function () {
-					LAPP.Publisher.publish("onScrollMove", self.myScroll, self); 
+					LAPP.Publisher.publish("onScrollMove", self.myScroll, self);
 					tempScrollY = self.myScroll.y;
 		        },
 		        onScrollStart:function (e) {
-		        	LAPP.Publisher.publish("onScrollStart", self); 
+		        	LAPP.Publisher.publish("onScrollStart", self);
 	                var target = e.target;
 	                var targetType = $(target).attr("el-type");
 	                var type = LAPP.Util.getDevice();
@@ -89,15 +87,15 @@ if(!LAPP){
                     e.preventDefault();
 	            },
 	            onBeforeScrollEnd: function() {
-        			LAPP.Publisher.publish("onBeforeScrollEnd", self);  
+        			LAPP.Publisher.publish("onBeforeScrollEnd", self);
 	            },
 	            onScrollEnd: function (myScroll) {
 //	            	console.info(1);
 					if (tempScrollY > 10) {
-						LAPP.Publisher.publish("onScrollEnd", self);  
+						LAPP.Publisher.publish("onScrollEnd", self);
 						LAPP.Publisher.publish("pullDown", self);
 					} else {
-						LAPP.Publisher.publish("onScrollCollapse", self);  
+						LAPP.Publisher.publish("onScrollCollapse", self);
 					}
 					tempScrollY = 0;
 					self.startScrollTime();
@@ -118,7 +116,7 @@ if(!LAPP){
 				}
 				LAPP.Publisher.publish("iSrollLoadedFinished", self.myScroll, self);
 				// LAPP.Publisher.publish("businessWidgetLoaded", self);
-            });			
+            });
 		},
 		refresh : function() {
 			this.myScroll.refresh();

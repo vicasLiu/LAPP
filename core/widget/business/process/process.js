@@ -2,8 +2,6 @@
  * @File 列表组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */
@@ -13,7 +11,7 @@ if(!LAPP){
 };
 (function(){
     var subEvent = function( inst ) {
-        var evts = new Map(),  
+        var evts = new Map(),
             me = inst,
             control = me.control;
         evts.put("dataFinish", function( data ){
@@ -64,8 +62,8 @@ if(!LAPP){
         };
     }
 
-    var Control = function( inst ) { 
- 
+    var Control = function( inst ) {
+
         this.receiveCParam = function( inst, data ) {
             if( !LAPP.Util.isObject(data) ) {
                 return;
@@ -81,7 +79,7 @@ if(!LAPP){
             }
 
             var self = inst;
-            
+
             var op = self.options;
             var dt = data;
             var dataFormat = op.dataFormat;
@@ -100,7 +98,7 @@ if(!LAPP){
             if( dt == undefined || dt.length == 0 ) {
                 return;
             }
-            
+
             inst.model.init(dt);
         };
         this.receiveParam = function( inst, arg ) {

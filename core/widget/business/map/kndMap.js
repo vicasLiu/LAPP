@@ -2,8 +2,6 @@
  * @File 地图组件
  * @Import
  * @CreatedBy LAPP Common Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-01-20
  */

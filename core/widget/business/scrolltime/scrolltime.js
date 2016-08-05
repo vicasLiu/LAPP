@@ -2,8 +2,6 @@
 * @File ScrollTime 组件
 * @Import
 * @CreatedBy LAPP Mobile Components Development Group
-* @GroupMember zengnanyun
-* @Email suchiva@126.com
 * @Module LAPP
 * @Date 2015-3-2
 */
@@ -33,7 +31,7 @@ if(!LAPP){
 		View
 	*/
 	var View = function (inst) {
-	
+
 		this.init = function (inst,data) {
 			seajs.use("core/widget/component/scrolltime/scrolltime.js",function(){
                 LAPP.Component.Scrolltime({op:inst.options,componentData:data,callback:function(html){inst.render(html);}});
@@ -92,10 +90,10 @@ if(!LAPP){
 			self.registerEvent(evts);
 
 			self.options = $.extend(true, {}, defaultOp, op);
-			 
+
 		    self.setData({});
-			 
-			LAPP.Publisher.publish("businessWidgetLoaded", self); 
+
+			LAPP.Publisher.publish("businessWidgetLoaded", self);
 		},
 		setData : function( data ) {
 			this.data = data;
@@ -115,7 +113,7 @@ if(!LAPP){
 			}
 			$(renderTarget).append(html);
 			EventCollector.initEvents(op.events);
-			
+
 		}
 	});
 

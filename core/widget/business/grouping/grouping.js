@@ -2,8 +2,6 @@
  * @File list组件
  * @Import
  * @CreatedBy LAPP Mobile Components Development Group
- * @GroupMember LiuSiWei ZhangHang
- * @Email suchiva@126.com
  * @Module LAPP
  * @Date 2014-10-14
  */
@@ -64,7 +62,7 @@ if (!LAPP) {
                         $("#" + op.id).prepend(_li);
                     }});
                 }
-            }); 
+            });
         };
     };
     /*
@@ -277,7 +275,7 @@ if (!LAPP) {
                 op.cb();
             }
             LAPP.Publisher.publish("componentLoadedFinished", self);
-            
+
             EventCollector.initEvents(op.events);
         },
         deleteLi: function () {

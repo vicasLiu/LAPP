@@ -1,8 +1,7 @@
 /**
  * @license LAPPCHART JS v1.0 (2014-06-16)
  * (c) 2013-2014 liusiwei
- * License: www.kingnode.com/license
- * 
+ *
  * @include chartRender.js
  */
 
